@@ -39,13 +39,6 @@ export function Header() {
 					</nav>
 				</div>
 			</div>
-
-			<div className="flex max-w-[1280px] m-96 py-10 px-3.5 z-50">
-				<h1 className="text-4xl font-bold text-center">Welcome to Our Website</h1>
-				<p className="text-center text-sm text-gray-600">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sagittis neque.
-				</p>
-			</div>
 		</header>
 	);
 }

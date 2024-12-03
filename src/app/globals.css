@@ -25,11 +25,11 @@
 
 body {
 	color: #000000;
-	background-image: url(/images/home.png);
+	/* background-image: url(/images/home.png);
 	background-repeat: no-repeat;
 	background-clip: border-box;
-	background-size: cover;
-	/* background: rgb(2, 2, 42);
+	background-size: cover; */
+	background: rgb(2, 2, 42);
   background: -moz-linear-gradient(
     90deg,
     rgba(2, 2, 42, 1) 0%,
@@ -45,7 +45,7 @@ body {
     rgba(2, 2, 42, 1) 0%,
     rgba(255, 99, 71, 1) 100%
   ); 
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02022a",endColorstr="#ff6347",GradientType=1);*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02022a",endColorstr="#ff6347",GradientType=1);
 	font-family: 'Roboto', 'Parkinsans', 'Poppins', sans-serif;
 	font-size: medium;
 }
