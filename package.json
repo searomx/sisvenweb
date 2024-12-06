@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth/mongodb-adapter": "^3.7.4",
     "@auth/prisma-adapter": "^2.7.4",
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
@@ -21,9 +20,11 @@
     "migrate": "^2.1.0",
     "mongodb": "^6.11.0",
     "next": "15.0.3",
+    "next-auth": "^4.24.10",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

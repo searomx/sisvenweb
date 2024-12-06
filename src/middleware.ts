@@ -1,21 +1,21 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { cookies } from 'next/headers';
-export const TOKEN_KEY = 'token';
+import { NextResponse } from 'next/server'
+import { withAuth, NextRequestWithAuth, NextAuthMiddlewareOptions } from 'next-auth/middleware'
 
-export async function middleware(request: NextRequest) {
-	const cookie = await cookiers();
-	const token = cookie.get(TOKEN_KEY);
+const middleware = (request: NextRequestWithAuth) => {
+  console.log('[MIDDLEWARE_NEXTAUTH_TOKEN]: ', request.nextauth.token)
 
-	const protectedRoutes = ['auth', 'customerArea'];
+  const isPrivateRoutes = request.nextUrl.pathname.startsWith('/private')
+  const isAdminUser = request.nextauth.token?.role === 'admin'
 
-	const isProtectedRoute = protectedRoutes.includes(request.nextUrl.pathname);
-	if (isProtectedRoute && !token) {
-		const url = new URL('/login', request.url);
-		url.searchParams.append('unanthorized', 'true');
-		return NextResponse.redirect(url.toString());
-	}
-	return NextResponse.next();
+  if (isPrivateRoutes && !isAdminUser) {
+    return NextResponse.rewrite(new URL('/denied', request.url))
+  }
 }
+
+const callbackOptions: NextAuthMiddlewareOptions = {}
+
+export default withAuth(middleware, callbackOptions)
+
 export const config = {
-	matcher: ['/auth', '/customerArea']
-};
+  matcher: '/private'
+}
