@@ -27,7 +27,7 @@ function classNames(...classes) {
 
 const Header = async () => {
 	const session = await getServerSession();
-	
+
 	return (
 		<Disclosure as="nav" className="bg-gray-800 shadow-md fixed w-full z-50">
 			<div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -105,6 +105,7 @@ const Header = async () => {
 				</div>
 			</DisclosurePanel>
 		</Disclosure>
+		
 	);
 };
 export { Header };

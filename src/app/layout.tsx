@@ -18,9 +18,6 @@ export default function RootLayout({
 			<html lang="pt-br" suppressHydrationWarning={true}>
 				<body className="items-center justify-center">
 					<Header />
-					{/* <div className="flex w-full bg-lime-300 h-1/3 ">
-						<img src="/images/home.png" alt="imagem home" className="m-auto w-full h-96" />
-					</div> */}
 					<div className="flex justify-center items-center">{children}</div>
 				</body>
 			</html>
