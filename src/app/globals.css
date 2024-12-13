@@ -104,3 +104,8 @@ h1{
 	font-size: 3em;
     font-weight: bold;
 }
+.navbar-fixed-top {
+	position: fixed !important;
+	top: 0;
+	width: 100%;
+  }

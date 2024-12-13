@@ -6,9 +6,9 @@ import NavBarLateral from '../components/NavBarLateral';
 export default function Home() {
 	return (
 		<>
-			<div className="flex flex-col relative">
+			{/* <div className="flex flex-col relative">
 				<NavBarLateral/>;
-			</div>
+			</div> */}
 			<div className="w-full max-w-screen-xl h-full flex flex-col justify-center items-center backdrop-opacity-10 backdrop-invert bg-white/30 relative">
 				{/* <div class="max-w-md shadow-md p-2 overflow-hidden md:max-w-2xl mt-16 backdrop-opacity-10 backdrop-invert bg-white/30 relative">
 					<nav>
@@ -85,7 +85,17 @@ export default function Home() {
 								<h2 className="text-white dark:text-white text-lg font-medium">Troca de Experiências</h2>
 							</div>
 							<div className="flex flex-col justify-between flex-grow">
-								<Image src="/images/img2.png" alt="img-equipe" width={1000} height={500} />
+								<Image
+									src="/images/img2.png"
+									alt="img-equipe"
+									width={1000}
+									height={500}
+									sizes="100vw"
+									style={{
+										width: '100%',
+										height: 'auto'
+									}}
+								/>
 								<p className="text-gray-500 dark:text-gray-400 text-lg">
 									Através de nossas reuniões semanais, trocamos experiências e aprendemos uns com os outros, para que
 									possamos sempre melhorar e crescer juntos.
@@ -121,10 +131,26 @@ export default function Home() {
 							Você administra de forma visual e em tempo real o desempenho de sua equipe.
 						</p>
 						<div className="flex flex-col max-w-screen-xl justify-center mt-1">
-							<Image src="/images/img-dashboard.png" alt="img-dashboard" width={1000} height={500} />
+							<Image src="/images/img-dash-1.png" alt="img-dashboard" width={1000} height={500} />
 						</div>
+						<a href="#" className="mt-3 text-black dark:text-white hover:text-amber-500 inline-flex items-center">
+							Retornar ao topo
+							<svg
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								class="w-4 h-4 ml-2"
+								viewBox="0 0 24 24"
+							>
+								<path d="M5 12h14M12 5l7 7-7 7"></path>
+							</svg>
+						</a>
 					</div>
+					
 				</div>
+				
 			</div>
 		</>
 	);
