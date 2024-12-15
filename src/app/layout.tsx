@@ -20,6 +20,7 @@ export default function RootLayout({
 				<body className="items-center justify-center">
 					<Header />
 					<NavBarLateral />
+
 					<div className="flex justify-center items-center">{children}</div>
 				</body>
 			</html>

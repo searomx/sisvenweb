@@ -63,6 +63,7 @@ const Header = async () => {
 							</div>
 						</div>
 					</div>
+
 					<div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 						<button
 							type="button"
@@ -72,7 +73,7 @@ const Header = async () => {
 							<span className="sr-only">View notifications</span>
 							<UserIcon aria-hidden="true" className="size-6" />
 						</button>
-						<div className="flex items-center justify-end">
+						<div className="flex items-center justify-end ml-2">
 							<Link href="/private">
 								<span className="text-lg font-semibold text-zinc-300">Área do cliente</span>
 							</Link>
@@ -105,7 +106,6 @@ const Header = async () => {
 				</div>
 			</DisclosurePanel>
 		</Disclosure>
-		
 	);
 };
 export { Header };

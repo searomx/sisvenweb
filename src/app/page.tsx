@@ -6,50 +6,20 @@ import NavBarLateral from '../components/NavBarLateral';
 export default function Home() {
 	return (
 		<>
-			{/* <div className="flex flex-col relative">
-				<NavBarLateral/>;
-			</div> */}
-			<div className="w-full max-w-screen-xl h-full flex flex-col justify-center items-center backdrop-opacity-10 backdrop-invert bg-white/30 relative">
-				{/* <div class="max-w-md shadow-md p-2 overflow-hidden md:max-w-2xl mt-16 backdrop-opacity-10 backdrop-invert bg-white/30 relative">
-					<nav>
-						<ul className="flex justify-between gap-5">
-							<li className="border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
-								<Link to="comofunc" smooth={true} duration={500} className="hover:text-gray-900 text-gray-600">
-									Como Funciona
-								</Link>
-							</li>
-							<li className="border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
-								<Link to="section2" smooth={true} duration={500} className="hover:text-gray-900 text-gray-600">
-									Depoimentos
-								</Link>
-							</li>
-							<li className="border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
-								<Link to="section3" smooth={true} duration={500} className="hover:text-gray-900 text-gray-600">
-									Seção 3
-								</Link>
-							</li>
-						</ul>
-					</nav>
-				</div> */}
-				{/* <ul>
-						<li className=" border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-600 dark:text-gray-400">
-							Home
-						</li>
-						<li className=" border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-600 dark:text-gray-400">
-							Sobre
-						</li>
-						<li className=" border-gray-200 dark:border-gray-700 px-4 py-2 text-sm text-gray-600 dark:text-gray-400">
-							Serviços
-						</li>
-					</ul> */}
-
-				<div className="flex w-full flex-wrap justify-center p-10 mt-10">
-					<div className="flex flex-col w-full items-center mb-3 p-2">
-						<p className="text-zinc-300 dark:text-white text-3xl font-medium flex">
+			<div
+				id="topo"
+				className={`w-full mx-auto max-w-7xl px-2 xl:max-w-screen-2xl h-full 
+				flex flex-col justify-center items-center 
+				backdrop-opacity-10 backdrop-invert bg-white/30 relative `}
+			>
+				{/* Primeira Pagina */}
+				<div className="flex w-full flex-wrap justify-center p-10 mt-10 lg:max-w-[84.5%]">
+					<div className="flex flex-col w-full items-center mb-3 p-2 text-center">
+						<p className="text-zinc-300 dark:text-white text-3xl lg:text-2xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
 							O Que é o Sistema de Gerenciamento de Vendas
 						</p>
 					</div>
-					<div className="p-4 max-w-sm ">
+					<div className="p-4 max-w-sm lg:w-1/3">
 						<div className="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
 							<div className="flex items-center mb-3">
 								<h2 className="text-white dark:text-white text-lg font-medium">Work Team</h2>
@@ -64,10 +34,10 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="p-4 max-w-sm">
+					<div className="p-4 max-w-sm lg:w-1/3">
 						<div className="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
 							<div className="flex items-center mb-3">
-								<h2 className="text-white dark:text-white text-lg font-medium">Criando uma cultura de inovação</h2>
+								<h2 className="text-white dark:text-white text-lg font-medium">Criando inovação</h2>
 							</div>
 							<div className="flex flex-col justify-between flex-grow">
 								<Image src="/images/team.png" alt="img-team" width={1000} height={500} />
@@ -79,7 +49,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="p-4 max-w-sm">
+					<div className="p-4 max-w-sm lg:w-1/3">
 						<div className="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
 							<div className="flex items-center mb-3">
 								<h2 className="text-white dark:text-white text-lg font-medium">Troca de Experiências</h2>
@@ -112,18 +82,22 @@ export default function Home() {
 								Juntos, vamos conectar seus clientes com suas fábricas.
 							</p>
 						</div>
-						<div className="flex justify-between flex-grow">
-							<p className="text-white dark:text-white">
+						<div className="flex flex-col justify-between flex-grow">
+							<p className="text-white dark:text-white text-wrap text-lg flex-col">
 								Nosso sistema foi elaborado para dar agilidade na conversão de negócios em seus clientes, ou seja, o
 								necessário, somente o necessário de ações para que você possa focar no que realmente importa: "Atender o
-								máximo de clientes possível."<div className="font-sans italic text-xl">e nós fazemos o resto.</div>
+								máximo de clientes possível".
 							</p>
+							<span className="font-sans italic text-xl text-tomato">e nós fazemos o resto.</span>
 						</div>
 					</div>
 				</div>
+				{/* Fim da Primeira Pagina */}
+
+				{/* Segunda Pagina */}
 				<div className="flex w-full flex-wrap justify-center p-10 mt-2">
 					<div className="flex flex-col w-full items-center mb-3 p-2">
-						<div id="comofunc" className="flex p-1 bg-slate-50 w-full">
+						<div id="comofunc" className="flex p-1 bg-slate-50 w-full justify-center items-center">
 							<p className="text-zinc-600 dark:text-white text-3xl font-medium flex">Como funciona o SGV</p>
 						</div>
 						<p className="text-zinc-300 dark:text-white text-3xl font-medium flex mt-4">Dashboard Intuitivo</p>
@@ -133,24 +107,28 @@ export default function Home() {
 						<div className="flex flex-col max-w-screen-xl justify-center mt-1">
 							<Image src="/images/img-dash-1.png" alt="img-dashboard" width={1000} height={500} />
 						</div>
-						<a href="#" className="mt-3 text-black dark:text-white hover:text-amber-500 inline-flex items-center">
+						<Link
+							to="topo"
+							smooth={true}
+							duration={500}
+							className="cursor-pointer mt-3 text-black dark:text-white hover:text-tomato inline-flex items-center"
+						>
 							Retornar ao topo
 							<svg
 								fill="none"
 								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								class="w-4 h-4 ml-2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
+								className="w-4 h-4 ml-2"
 								viewBox="0 0 24 24"
 							>
 								<path d="M5 12h14M12 5l7 7-7 7"></path>
 							</svg>
-						</a>
+						</Link>
 					</div>
-					
 				</div>
-				
+				{/* Fim da Segunda Pagina */}
 			</div>
 		</>
 	);
