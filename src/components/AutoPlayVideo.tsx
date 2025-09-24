@@ -1,18 +1,14 @@
 import React from 'react';
+import VideoSwitcher from './VideoSwitcher';
 
-function AutoplayVideo() {
+const AutoplayVideo: React.FC = () => {
+	const videos = ['./videos/video-equipe1.mp4', './videos/video-equipe2.mp4', './videos/video-equipe3.mp4'];
 	return (
-		<video
-			autoPlay // Starts playing the video automatically
-			muted // Required by most browsers to allow autoplay
-			playsInline // Useful for iOS Safari to prevent fullscreen playback
-			loop // Optionally loop the video
-			controls // Optionally show default video controls
-		>
-			<source src="./videos/video-equipe1.mp4" type="video/mp4" />
-			Your browser does not support the video tag.
-		</video>
+		<div>
+			<h1>Troca Automática de Vídeo</h1>
+			<VideoSwitcher videoUrls={videos} />
+		</div>
 	);
-}
-
+};
 export default AutoplayVideo;
+
