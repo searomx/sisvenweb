@@ -1,34 +1,40 @@
-ARG NODE_VERSION=22.17.0-alpine
-FROM node:${NODE_VERSION} AS base
+# Etapa 1: Build
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
-COPY --link package.json package-lock.json ./
+# Copia os arquivos de dependência
+COPY package.json package-lock.json ./
 
-ENV NODE_ENV=production
+# Instala as dependências
+RUN npm ci
 
-RUN npm ci --omit=dev && npm cache clean --force
+# Copia o restante do projeto
+COPY . .
 
-FROM base AS builder
-
-COPY --link . .
-
+# Build do projeto Next.js
 RUN npm run build
 
-FROM node:${NODE_VERSION} AS runner
-
-USER node
-
-ENV PORT=3000
-
-ENV NEXT_TELEMETRY_DISABLE=1
+# Etapa 2: Produção
+FROM node:22-alpine AS runner
 
 WORKDIR /app
 
-COPY --link --from=builder /app/.next/standalone ./      
-COPY --link --from=builder /app/.next/static ./.next/static
-COPY --link --from=builder /app/public ./public              
+# Instala apenas dependências de produção
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev
 
+# Copia os arquivos gerados na build
+COPY --from=builder /app/.next .next
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+# Define a variável de ambiente
+ENV NODE_ENV=production
+
+# Expõe a porta padrão do Next.js
 EXPOSE 3000
 
-ENTRYPOINT ["node", "server.js"]
+# Comando para iniciar o servidor
+CMD ["npm", "start"]
