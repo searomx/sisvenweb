@@ -18,7 +18,7 @@ const navigation = [
 	{ name: 'Home', href: '/', current: true },
 	// { name: 'Privada', href: '/private', current: false },
 	// { name: 'Publica', href: '/', current: false },
-	{ name: 'Planos', href: '/commons/pricing', current: false }
+	{ name: 'Planos', href: '/public/commons/pricing', current: false }
 ];
 
 function classNames(...classes) {
@@ -73,7 +73,7 @@ const Header = async () => {
 							<UserIcon aria-hidden="true" className="size-6" />
 						</button>
 						<div className="flex items-center justify-end ml-2">
-							<Link href="/private">
+							<Link href="/login">
 								<span className="text-lg font-semibold text-zinc-300">Área do cliente</span>
 							</Link>
 						</div>
