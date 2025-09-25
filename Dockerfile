@@ -1,27 +1,34 @@
-FROM node:22-alpine
+ARG NODE_VERSION=22.17.0-alpine
+FROM node:${NODE_VERSION} AS base
 
-RUN apk update && apk upgrade
+WORKDIR /app
 
-ADD package.json /tmp/package.json
+COPY --link package.json package-lock.json ./
 
-ADD yarn.lock /tmp/yarn.lock
+ENV NODE_ENV=production
 
-RUN rm -rf build
+RUN npm ci --omit=dev && npm cache clean --force
 
-RUN cd /tmp && yarn install
+FROM base AS builder
 
-ADD ./ /src
+COPY --link . .
 
-ADD ./prisma /src/prisma
+RUN npm run build
 
-RUN rm -rf src/node_modules && cp -a /tmp/node_modules /src/
+FROM node:${NODE_VERSION} AS runner
 
-WORKDIR /src
+USER node
 
-RUN npx prisma generate
+ENV PORT=3000
 
-RUN yarn build
+ENV NEXT_TELEMETRY_DISABLE=1
+
+WORKDIR /app
+
+COPY --link --from=builder /app/.next/standalone ./      
+COPY --link --from=builder /app/.next/static ./.next/static
+COPY --link --from=builder /app/public ./public              
 
 EXPOSE 3000
 
-CMD ["node", "build/src/app.js"]
+ENTRYPOINT ["node", "server.js"]

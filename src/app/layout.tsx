@@ -5,7 +5,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { AuthProvider } from '@/providers/auth-provider';
 import { Header } from '@/components/header';
 import NavBarLateral from '@/components/NavBarLateral';
-import '../globals.css';
+import './globals.css';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt" suppressHydrationWarning={true}>
-			<body>
+			<body cz-shortcut-listen="true" className={`${geistSans.variable} ${geistMono.variable} font-sans bg-gray-900`}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
 					<AuthProvider>
 						<Header />

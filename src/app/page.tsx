@@ -1,20 +1,20 @@
 'use client';
+import { useState, useEffect } from 'react'
 import Image from 'next/image';
-import imgWorkTeam from '../../../public/images/work-team.png';
-import imgTeam from '../../../public/images/team.png';
-import imgEquipe from '../../../public/images/img2.png';
-import imgGraph1 from '../../../public/images/grafico1.png';
-import imgGraph2 from '../../../public/images/grafico2.png';
-import imgGraph3 from '../../../public/images/graph21.png';
-import imgGraph4 from '../../../public/images/graph4.png';
-import imgGraph5 from '../../../public/images/graph5.png';
-import imgGraph6 from '../../../public/images/graph10.png';
-import imgGraph7 from '../../../public/images/graph7.png';
-import imgGraph8 from '../../../public/images/graph8.png';
-import imgGraph9 from '../../../public/images/graph9.png';
+import imgWorkTeam from '../../public/images/work-team.png';
+import imgTeam from '../../public/images/team.png';
+import imgEquipe from '../../public/images/img2.png';
+import imgGraph1 from '../../public/images/grafico1.png';
+import imgGraph2 from '../../public/images/grafico2.png';
+import imgGraph3 from '../../public/images/graph21.png';
+import imgGraph4 from '../../public/images/graph4.png';
+import imgGraph5 from '../../public/images/graph5.png';
+import imgGraph6 from '../../public/images/graph10.png';
+import imgGraph7 from '../../public/images/graph7.png';
+import imgGraph8 from '../../public/images/graph8.png';
+import imgGraph9 from '../../public/images/graph9.png';
 import { Link, Element } from 'react-scroll';
 import NavBarLateral from '@/components/NavBarLateral';
-// import Banner from '../components/Banner';
 import AutoplayVideo from '@/components/AutoPlayVideo';
 // import { ImTruck } from "react-icons/im";
 
@@ -28,8 +28,6 @@ export default function Home() {
 			<div className="flex w-full flex-wrap items-center justify-center px-10 p-2 mt-10 m-auto lg:max-w-screen-xl">
 				<div className="flex flex-col w-full items-center mb-3 p-2 text-center">
 					<span className="text-zinc-800 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
-						{/* <span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium flex text-wrap lg:text-wrap text-center"> */}
-						{/* <span className="text-zinc-800 text-5xl lg:text-4xl md:text-xl sm:text-sm font-medium flex text-wrap lg:text-wrap text-center"> */}
 						O Que é o Sistema de Gerenciamento de Vendas - SGV.
 					</span>
 					<span className="text-zinc-800 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
@@ -112,9 +110,9 @@ export default function Home() {
 			{/* Fim da Primeira Pagina */}
 
 			{/* Segunda Pagina */}
-			<div className="flex w-full flex-wrap justify-center p-5 mt-1">
+			<div id="comofunc" className="flex w-full flex-wrap justify-center p-5 mt-10 m-auto lg:max-w-screen-xl">
 				<div className="flex flex-col items-center mb-3 p-2">
-					<div id="comofunc" className="flex p-1 bg-slate-50 w-full justify-center items-center">
+					<div className="flex p-1 bg-slate-50 w-full justify-center items-center">
 						<span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium flex text-wrap lg:text-wrap text-center">
 							Como funciona o SGV
 						</span>
