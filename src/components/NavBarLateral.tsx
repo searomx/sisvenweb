@@ -1,5 +1,5 @@
 'use client';
-import { Link, Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 import style from './styles.module.css';
 
 export default function NavBarLateral() {	
