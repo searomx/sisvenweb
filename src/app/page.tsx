@@ -124,8 +124,8 @@ export default function Home() {
               Nosso aplicativo foi elaborado para dar agilidade na conversão de
               negócios em seus clientes, ou seja, o necessário, somente o
               necessário de ações para que você possa focar no que realmente
-              importa: "Atender o máximo de clientes possível, direto ao
-              ponto!".
+              importa: &quot;Atender o máximo de clientes possível, direto ao
+              ponto!&quot;.
             </span>
             <span className="font-sans italic text-xl text-[#ea4e3c] text-center">
               e nós fazemos o resto.
