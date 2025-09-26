@@ -44,5 +44,10 @@
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.8",
     "typescript": "^5"
+  },
+  "optionalDependencies": {
+    "@tailwindcss/oxide-linux-x64-gnu": "4.1.13",
+    "litningcss-linux-x64-gnu": "1.3.6",
+    "fsevents": "^2.3.2"
   }
 }
