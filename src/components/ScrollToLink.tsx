@@ -2,25 +2,23 @@
 import Link from 'next/link';
 import React, { ComponentPropsWithRef } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { scrollElementToView } from //whereEver you keep the file
+// import { scrollElementToView } from '../utils/scrollElementToView'; // Update the path as needed
 
-
-interface PropTypes extends ComponentPropsWithRef<typeof Link> {
-    scrollToId: string
+interface ScrollToLinkProps extends ComponentPropsWithRef<typeof Link> {
+    scrollToId: string;
 }
 
 
 
-function ScrollToLink({ children, scrollToId, href, ...props }: PropTypes) {
+function ScrollToLink({ children, scrollToId, href, ...props }: ScrollToLinkProps) {
     const searchParams = useSearchParams();
-
 
     const persistScrollFeature = () => {
         const urlScrollToId = searchParams.get("scrollToId");
 
         if (!urlScrollToId || scrollToId !== urlScrollToId) return; //let the Global Component Handle it
 
-        scrollElementToView(urlScrollToId);
+        // scrollElementToView(urlScrollToId);
     }
 
     return (
