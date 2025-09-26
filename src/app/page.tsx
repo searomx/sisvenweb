@@ -50,7 +50,6 @@ export default function Home() {
                 src={imgWorkTeam}
                 alt="img-team"
                 sizes="100vw"
-                quality={100}
                 priority={true}
               />
               <span className="text-gray-500 dark:text-gray-400 text-lg">
@@ -74,7 +73,6 @@ export default function Home() {
                 src={imgTeam}
                 alt="img-team"
                 sizes="100vw"
-                quality={100}
                 priority={true}
               />
               <span className="text-gray-500 dark:text-gray-400 text-lg">
@@ -98,7 +96,6 @@ export default function Home() {
                 className="object-cover shadow-lg rounded-lg"
                 src={imgEquipe}
                 alt="img-equipe"
-                quality={100}
                 sizes="100vw"
                 priority={true}
               />
@@ -203,7 +200,6 @@ export default function Home() {
               src={imgGraph1}
               alt="img-grafico-barras"
               sizes="100vw"
-              quality="100"
               priority={true}
             />
             <span className="text-gray-700 text-sm p-1">
@@ -220,7 +216,6 @@ export default function Home() {
                     src={imgGraph2}
                     alt="img-grafico-pizza"
                     sizes="100vw"
-                    quality="100"
                     className="hover:transform-scale-x-100"
                     priority={true}
                   />
@@ -240,7 +235,6 @@ export default function Home() {
                     <Image
                       src={imgGraph3}
                       alt="img-graph3"
-                      quality={100}
                       sizes="100vw"
                       priority={true}
                     />
@@ -255,7 +249,6 @@ export default function Home() {
               alt="img-grafico-barras"
               width={1200}
               height={800}
-              quality="100"
               priority={true}
             />
             <span className="text-gray-700 text-sm p-1">
@@ -267,7 +260,6 @@ export default function Home() {
               src={imgGraph5}
               alt="img-grafico-barras"
               sizes="100vw"
-              quality="100"
               priority={true}
             />
             <span className="text-gray-700 text-sm p-1">
@@ -279,7 +271,6 @@ export default function Home() {
               src={imgGraph6}
               alt="img-grafico-barras"
               sizes="100vw"
-              quality="100"
               priority={true}
             />
             <span className="text-gray-700 text-sm p-1">
@@ -291,7 +282,6 @@ export default function Home() {
               src={imgGraph7}
               alt="img-grafico-barras"
               sizes="100vw"
-              quality="100"
               priority={true}
             />
             <span className="text-gray-700 text-sm p-1">
@@ -303,7 +293,6 @@ export default function Home() {
               src={imgGraph8}
               alt="img-grafico-barras"
               sizes="100vw"
-              quality="100"
               priority={true}
             />
             <span className="text-gray-700 text-sm p-1">
@@ -316,7 +305,6 @@ export default function Home() {
                 src={imgGraph9}
                 alt="img-grafico-barras"
                 sizes="100vw"
-                quality="100"
                 priority={true}
               />
               <span className="text-gray-700 text-sm p-1">
