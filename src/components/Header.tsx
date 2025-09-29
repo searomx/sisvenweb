@@ -51,6 +51,7 @@ const Header = async () => {
               width={167}
               height={70}
               priority={true}
+              className="sm:ml-2"
             />
           </div>
           <div className="flex flex-2 items-center justify-center sm:items-stretch sm:justify-start">
