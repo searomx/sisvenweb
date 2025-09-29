@@ -47,7 +47,7 @@
   },
   "optionalDependencies": {
     "@tailwindcss/oxide-linux-x64-gnu": "4.1.13",
-    "litningcss-linux-x64-gnu": "1.3.6",
-    "fsevents": "^2.3.2"
+    "fsevents": "^2.3.2",
+    "litningcss-linux-x64-gnu": "1.3.6"
   }
 }

@@ -8,14 +8,14 @@ export default {
   ],
 
   theme: {
-    //screens: {
-    // 	lg: '1366px',
-    // 	xl: '1920px',
-    // 	md: '768px',
-    // 	sm: '480px',
-    // 	// => @media (min-width: 640px) { ... }
-    // 	// => @media (min-width: 992px) { ... }
-    //},
+    screens: {
+      // 	lg: '1366px',
+      // 	xl: '1920px',
+      // 	md: '768px',
+      sm: "412px",
+      // 	// => @media (min-width: 640px) { ... }
+      // 	// => @media (min-width: 992px) { ... }
+    },
     extend: {
       colors: {
         tomato: "#ea4e3c",

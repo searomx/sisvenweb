@@ -25,13 +25,18 @@ const Header = async () => {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-800 shadow-md fixed w-full top-0 z-50"
+      className="bg-gray-800 shadow-2xl fixed w-full top-0 z-50"
     >
       <div className="mx-auto w-full sm:px-6 lg:px-8">
-        <div className="w-full flex flex-1 h-14 items-center">
+        <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton
+              className={`group relative inline-flex items-center 
+              justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700
+               hover:text-white focus:outline-none focus:ring-2 
+               focus:ring-inset focus:ring-white ml-20`}
+            >
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Abrir Menu Principal</span>
               <Bars3Icon
@@ -40,19 +45,23 @@ const Header = async () => {
               />
               <XMarkIcon
                 aria-hidden="true"
-                className="hidden size-6 group-data-[open]:block"
+                className="hidden size-6 group-data-[open]:block sm:size-3"
               />
             </DisclosureButton>
           </div>
-          <div className="flex flex-grow max-h-[55px] sm:items-stretch sm:justify-start">
-            <Image
-              alt="LogoMarca"
-              src="/images/logo_sgv_bla.png"
-              width={167}
-              height={70}
-              priority={true}
-              className="sm:ml-2"
-            />
+          <div className="flex flex-grow max-h-[55px] sm:max-w-full inset-y-0 left-0 items-center sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="flex max-h-[55px] items-center p-2 bg-amber-400 rounded lg:ml-0 xl:ml-0">
+              <Image
+                alt="LogoMarca"
+                src="/images/logo_sgv_bla.png"
+                width={167}
+                height={70}
+                priority={true}
+                quality={100}
+                // sizes="(max-width: 768px) 100vw, 33vw"
+                className="flex h-8 w-auto lg:ml-0 xl:ml-0"
+              />
+            </div>
           </div>
           <div className="flex flex-2 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="hidden sm:ml-6 sm:block">
