@@ -29,6 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt" suppressHydrationWarning={true}>
+      <script src="//code.jivosite.com/widget/VmBEDuFv7H" async></script>
+
       <body
         cz-shortcut-listen="true"
         className={`${geistSans.variable} ${geistMono.variable} font-sans bg-gray-900`}
