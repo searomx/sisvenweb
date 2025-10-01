@@ -35,7 +35,7 @@ export default function Home() {
             <span className="text-zinc-800 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
               Administração de vendas de maneira eficaz.
             </span>
-            <span className="text-zinc-800 text-shadow-lg/30 text-3xl lg:text-1xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
+            <span className="text-amber-500 text-shadow-lg/30 text-3xl lg:text-1xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
               Tudo na palma da sua mão.
             </span>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col max-w-screen-xl justify-center mt-1">
             <div className="flex flex-col items-center mb-3">
-              <span className="text-zinc-800 text-shadow-lg/30 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+              <span className="text-amber-400 text-shadow-lg/30 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
                 O que nós podemos fazer por você hoje?
               </span>
               <span className="text-zinc-800 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
@@ -125,7 +125,7 @@ export default function Home() {
                 importa: &quot;Atender o máximo de clientes possível, direto ao
                 ponto!&quot;.
               </span>
-              <span className="font-sans italic text-xl text-[#ea4e3c] text-center">
+              <span className="font-sans italic text-xl text-amber-400 text-center">
                 e nós fazemos o resto.
               </span>
             </div>
