@@ -11,6 +11,7 @@ import imgGraph5 from "../../public/images/graph5.png";
 import imgGraph7 from "../../public/images/graph7.png";
 import imgGraph8 from "../../public/images/graph8.png";
 import imgGraph9 from "../../public/images/graph9.png";
+import imgGraph10 from "../../public/images/img-grafico-funil.png";
 import imgEquipe from "../../public/images/img2.png";
 import imgTeam from "../../public/images/team.png";
 import imgWorkTeam from "../../public/images/work-team.png";
@@ -241,7 +242,7 @@ export default function Home() {
                     Acompanhe em tempo real o desempenho de cada fábrica e tome
                     decisões rápidas.
                   </span>
-                  <span className="text-md italic">
+                  <span className="text-md italic p-1">
                     colocando o mouse sobre a fatia da fábrica, é retornado no
                     verso os pedidos relativos às vendas registradas no mês
                     corrente.
@@ -312,9 +313,9 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-300 text-sm p-1">
+            <p className="text-gray-300 text-sm p-1">
               Faturamento distribuido por atividade do cliente no mês corrente.
-            </span>
+            </p>
           </div>
           <div>
             <div className="rounded overflow-hidden shadow-2xl shadow-cyan-300 bg-background h-full w-auto">
@@ -324,10 +325,26 @@ export default function Home() {
                 sizes="100vw"
                 priority={true}
               />
-              <span className="text-gray-300 text-sm p-1">
+              <p className="text-gray-300 text-sm p-1">
                 Evolução de vendas diárias contrastando com a meta de vendas.
-              </span>
+              </p>
             </div>
+            
+          </div>
+          <div>
+            <div className="rounded overflow-hidden shadow-2xl shadow-cyan-300 bg-background h-full w-auto">
+              <Image
+                src={imgGraph10}
+                alt="img-grafico-funil-vendas"
+                sizes="100vw"
+                priority={true}
+              />
+              <p className="text-gray-300 text-sm p-1">
+                Analise o funil de vendas e identifique oportunidades de melhoria
+                em cada etapa do processo.
+              </p>
+            </div>
+            
           </div>
         </div>
         <Link
@@ -371,13 +388,14 @@ export default function Home() {
           </div>
           <div className="items-center  shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 col-span-2 h-auto sm:overflow-y-scroll sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
             <p className="text-gray-300">
-              &quot;Há duas décadas, quando decidimos implementar o SGV Gestão de
-              Vendas em nossa empresa, não imaginávamos o impacto transformador
-              que essa decisão teria. Na época, enfrentávamos dificuldades para
-              organizar nossos processos comerciais, acompanhar o desempenho da
-              equipe e entender com clareza os números do nosso negócio. O SGV
-              chegou como uma solução completa, intuitiva e eficiente, que
-              revolucionou a forma como gerenciamos nossas vendas.
+              &quot;Há duas décadas, quando decidimos implementar o SGV Gestão
+              de Vendas em nossa empresa, não imaginávamos o impacto
+              transformador que essa decisão teria. Na época, enfrentávamos
+              dificuldades para organizar nossos processos comerciais,
+              acompanhar o desempenho da equipe e entender com clareza os
+              números do nosso negócio. O SGV chegou como uma solução completa,
+              intuitiva e eficiente, que revolucionou a forma como gerenciamos
+              nossas vendas.
             </p>
             <p className="text-gray-300">
               Com o passar dos anos, o SGV evoluiu junto com a nossa empresa. A
@@ -413,8 +431,8 @@ export default function Home() {
           </div>
           <div className="items-center  shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 col-span-2 h-auto sm:overflow-y-scroll sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
             <p className="text-gray-300">
-              &quot;Trabalhamos com representação comercial há mais de 25 anos, e
-              posso dizer com tranquilidade que o SGV Gestão de Vendas foi um
+              &quot;Trabalhamos com representação comercial há mais de 25 anos,
+              e posso dizer com tranquilidade que o SGV Gestão de Vendas foi um
               divisor de águas na nossa operação. Desde que adotamos o sistema,
               conseguimos transformar completamente nossa abordagem de
               prospecção e conversão de vendas.

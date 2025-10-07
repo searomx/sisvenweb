@@ -12,7 +12,7 @@ import { SignOutButton } from "./sign-out-button";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  // { name: 'Privada', href: '/private', current: false },
+  { name: 'Produtos', href: '/produtos', current: false },
   // { name: 'Publica', href: '/', current: false },
   { name: "Planos", href: "/public/commons/pricing", current: false },
 ];
