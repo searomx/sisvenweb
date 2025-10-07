@@ -1,7 +1,6 @@
-import  { Header } from "@/components/Header";
+import { Header } from "@/components/Header";
 import NavBarLateral from "@/components/NavBarLateral";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { AuthProvider } from "@/providers/auth-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import React from "react";
@@ -30,10 +29,9 @@ export default function RootLayout({
   return (
     <html lang="pt" suppressHydrationWarning={true}>
       <script src="//code.jivosite.com/widget/VmBEDuFv7H" async></script>
-
       <body
         cz-shortcut-listen="true"
-        className={`${geistSans.variable} ${geistMono.variable} font-sans bg-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans bg-neutral-950 text-neutral-50 min-h-screen`}
       >
         <ThemeProvider
           attribute="class"
@@ -41,11 +39,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <AuthProvider>
-            <Header />
-            <NavBarLateral />
-            {children}
-          </AuthProvider>
+          <Header />
+          <NavBarLateral />
+          {children}
         </ThemeProvider>
       </body>
     </html>

@@ -42,14 +42,14 @@ const Signin = () => {
 	};
 
 	return (
-		<section className="w-full h-screen flex items-center justify-center">
+		<section className="w-full h-screen flex items-center justify-center p-3">
 			<form
 				className="p-6 xs:p-10	w-full max-w-[350px] flex flex-col justify-between items-center gap-2.5	
         border border-solid border-[#242424] bg-[#0a0a0a] rounded"
 				onSubmit={handleSubmit}
 			>
 				{error && <div className="">{error}</div>}
-				<h1 className="mb-5 w-full text-2xl	font-bold">Signin</h1>
+				<h1 className="mb-5 w-full text-2xl	font-bold text-amber-700">Signin</h1>
 
 				<label className={labelStyles}>Email:</label>
 				<input

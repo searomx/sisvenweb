@@ -25,7 +25,7 @@ const Header = async () => {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-800 shadow-2xl fixed w-full top-0 z-50"
+      className="bg-gray-800 shadow-xl/30 shadow-[#FFB900] fixed w-full top-0 z-50"
     >
       <div className="mx-auto w-full sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
@@ -57,7 +57,6 @@ const Header = async () => {
                 width={167}
                 height={70}
                 priority={true}
-                quality={100}
                 // sizes="(max-width: 768px) 100vw, 33vw"
                 className="flex h-8 w-auto lg:ml-0 xl:ml-0"
               />
