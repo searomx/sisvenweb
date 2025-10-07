@@ -3,7 +3,7 @@
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import { BiLogoGoogle, BiSolidHide, BiSolidShow } from "react-icons/bi";
 
 const Signin = () => {

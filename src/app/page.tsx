@@ -371,7 +371,7 @@ export default function Home() {
           </div>
           <div className="items-center  shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 col-span-2 h-auto sm:overflow-y-scroll sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
             <p className="text-gray-300">
-              "Há duas décadas, quando decidimos implementar o SGV Gestão de
+              &quot;Há duas décadas, quando decidimos implementar o SGV Gestão de
               Vendas em nossa empresa, não imaginávamos o impacto transformador
               que essa decisão teria. Na época, enfrentávamos dificuldades para
               organizar nossos processos comerciais, acompanhar o desempenho da
@@ -396,7 +396,7 @@ export default function Home() {
             <p className="text-gray-300">
               Se estamos onde estamos hoje, com uma empresa sólida e em
               constante evolução, muito se deve à confiança e ao suporte que o
-              SGV nos proporcionou ao longo desses 20 anos.
+              SGV nos proporcionou ao longo desses 20 anos.&quot;
             </p>
             <p className="text-gray-300">- Dejalmas de Oliveira </p>
             <p>- Djr Representações Comerciais</p>
@@ -413,7 +413,7 @@ export default function Home() {
           </div>
           <div className="items-center  shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 col-span-2 h-auto sm:overflow-y-scroll sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
             <p className="text-gray-300">
-              "Trabalhamos com representação comercial há mais de 25 anos, e
+              &quot;Trabalhamos com representação comercial há mais de 25 anos, e
               posso dizer com tranquilidade que o SGV Gestão de Vendas foi um
               divisor de águas na nossa operação. Desde que adotamos o sistema,
               conseguimos transformar completamente nossa abordagem de
@@ -441,7 +441,7 @@ export default function Home() {
             <p className="text-gray-300">
               Ele nos ajuda a enxergar oportunidades onde antes víamos
               obstáculos. Para a DJR Representações, é sinônimo de crescimento
-              sustentável e vendas com propósito."
+              sustentável e vendas com propósito&quot;
             </p>
             <p className="text-gray-300">- Northon - Gerente Comercial </p>
             <p>- DJR Representações Comerciais</p>
