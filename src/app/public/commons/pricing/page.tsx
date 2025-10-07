@@ -4,8 +4,9 @@ const tiers = [
 	{
 		name: 'light',
 		id: 'tier-light',
-		href: '/cadastros/cliente',
+		href: '/login',
 		priceMonthly: 'R$79,00',
+		condition: 'Por usuário/mês - no cartão de credito',
 		description:
 			'O Plano Light é ideal para pequenas equipes que estão começando a explorar o poder do nosso sistema de gestão de vendas. Com recursos essenciais para gerenciar suas operações de vendas, este plano oferece uma solução acessível e eficiente para impulsionar o crescimento do seu negócio.',
 		features: [
@@ -27,6 +28,7 @@ const tiers = [
 		id: 'tier-enterprise',
 		href: 'cadastros/cliente',
 		priceMonthly: 'R$149,00',
+		condition: 'Por usuário/mês - no cartão de credito',
 		description:
 			'O Plano Enterprise é projetado para empresas em crescimento que necessitam de funcionalidades avançadas e maior flexibilidade. Com recursos adicionais e suporte prioritário, este plano é ideal para equipes que buscam otimizar suas operações de vendas e expandir sua presença no mercado.',
 		features: [
@@ -102,7 +104,7 @@ export default function Pricings() {
 								{tier.priceMonthly}
 							</span>
 							<span className={classNames(tier.featured ? 'text-gray-400' : 'text-gray-500', 'text-base')}>
-								/mês *(Cobrado Anualmente no boleto ou cartão de crédito)
+								{tier.condition}
 							</span>
 						</p>
 						<p className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-6 text-base/7')}>
