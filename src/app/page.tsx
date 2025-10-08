@@ -373,7 +373,7 @@ export default function Home() {
           id="depoimentos"
           className="flex p-1 bg-slate-50 w-full h-5 justify-center items-center"
         ></div>
-        <div className="grid grid-cols-3 gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-10 lg:gap-x-2">
+        <div className="grid grid-cols-3 items-start gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-10 lg:gap-x-2">
           <span className="text-gray-300 p-1 col-span-3 text-3xl sm:text-2xl lg:text-2xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
             O que dizem nossos clientes.
           </span>

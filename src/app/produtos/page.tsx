@@ -3,6 +3,7 @@ import imgMicroservicos from "../../../public/images/microservicos.png";
 import imgAuditoria from "../../../public/images/auditoria.png";
 import imgErp from "../../../public/images/erp.png";
 import imgIa from "../../../public/images/ia.png";
+import imgSGV from "../../../public/images/logo-sgv.png";
 
 export default function Produtos() {
   return (
@@ -17,8 +18,99 @@ export default function Produtos() {
           estamos aqui para ajudar você a alcançar seus objetivos.
         </p>
       </div>
+      <div className="grid grid-cols-3 sm:gap-1 items-start gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
+        <div className="items-center h-auto shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+          <div className="flex flex-col  h-full ">
+            <Image
+              src={imgSGV}
+              alt="img-logo-sgv"
+              sizes="100vw"
+              priority={true}
+              className="m-auto object-cover w-full h-auto"
+            />
+          </div>
+        </div>
+        <div className="items-center col-span-2 h-auto shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+          <div className="flex flex-col items-start justify-center h-auto">
+            <h2 className=" text-2xl font-bold items-center justify-center mb-2 sm:text-[0.7rem] md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              GESTÃO INTELIGENTE DE VENDAS - REPRESENTANTES COMERCIAIS
+            </h2>
+            <p className="text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Público-alvo: Representantes comerciais e distribuidores de
+              diversos setores
+            </p>
+            <p className="text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Setores atendidos:
+            </p>
+            <p>
+              Autopeças, Materiais elétricos, Calçados e confecções, Materiais de
+              construção, Distribuição em geral.
+            </p>
+            <p className="text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Gestão Comercial:
+            </p>
+            
+              <ul className="list-disc list-inside">
+                <li>Administração completa da carteira de clientes</li>
+                <li>Cadastro e controle</li>
+                <li>Histórico de compras</li>
+                <li>Limites de crédito</li>
+                <li>Condições comerciais</li>
+                <li>múltiplas fábricas por representante</li>
+                <li>Gestão de pedidos e comissões</li>
+              </ul>
+             
+            <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Organização de vendedores por:
+            </p>
+            <p>
+              Fábrica Região Estado Mesorregião Cidade Ramo de atividade dos
+              clientes
+            </p>
+            <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Controle de Comissões
+            </p>
+            <p>
+              Cálculo automático de comissões por vendedor Relatórios detalhados
+              por período, região ou representada
+            </p>
+            <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Painel de Inteligência Comercial
+            </p>
+            <p>
+              Dashboard interativo com gráficos em tempo real Indicadores de
+              desempenho por vendedor, região e produto Acompanhamento de metas
+              e evolução de vendas
+            </p>
+            <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Gestão de Metas
+            </p>
+            <p>
+              Definição de metas personalizadas por vendedor ou equipe
+              Monitoramento de progresso com alertas e comparativos
+            </p>
+            <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Gestão de Usuários
+            </p>
+            <p>
+              Controle de acesso por nível de permissão Perfis distintos para
+              administradores, representantes e vendedores
+            </p>
+            <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+              Diferenciais Competitivos
+            </p>
+            <p>
+              Interface intuitiva e responsiva (ideal para uso em campo)
+              Adaptável a diferentes segmentos industriais Otimizado para
+              performance e escalabilidade Integração com sistemas ERP e
+              ferramentas de BI (se aplicável) Suporte técnico e atualizações
+              constantes
+            </p>
+          </div>
+        </div>
+      </div>
 
-      <div className="grid grid-cols-3 sm:gap-1  gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
+      <div className="grid grid-cols-3 items-start sm:gap-1  gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
         <div className="items-center h-auto shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
           <div className="flex flex-col items-center justify-center h-full ">
             <Image
@@ -85,7 +177,7 @@ export default function Produtos() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 sm:gap-1  gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
+      <div className="grid grid-cols-3 items-start sm:gap-1  gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
         <div className="items-center h-auto shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
           <div className="flex flex-col items-center justify-center h-full ">
             <Image
@@ -112,7 +204,7 @@ export default function Produtos() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 sm:gap-1  gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
+      <div className="grid grid-cols-3 items-start sm:gap-1  gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
         <div className="items-center h-auto shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
           <div className="flex flex-col items-center justify-center h-full ">
             <Image
@@ -175,7 +267,7 @@ export default function Produtos() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 sm:gap-1  gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
+      <div className="grid grid-cols-3 items-start sm:gap-1  gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-12 p-2 lg:gap-x-2">
         <div className="items-center h-auto shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
           <div className="flex flex-col items-center justify-center h-full ">
             <Image
