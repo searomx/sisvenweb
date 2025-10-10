@@ -12,9 +12,7 @@ export default {
       // 	lg: '1366px',
       // 	xl: '1920px',
       // 	md: '768px',
-      sm: "412px",
-      // 	// => @media (min-width: 640px) { ... }
-      // 	// => @media (min-width: 992px) { ... }
+      sm: "412px", // 	// => @media (min-width: 992px) { ... }
     },
     extend: {
       colors: {
@@ -26,6 +24,20 @@ export default {
       },
       scale: {
         "-100": "-1",
+      },
+      animation: {
+        'fade-in': 'fade-in 1s ease-out forwards',
+        'fade-out': 'fade-out 1s ease-out forwards',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'fade-out': {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
       },
 
       padding: {

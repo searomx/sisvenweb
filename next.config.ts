@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+const withFlowbiteReact = require("flowbite-react/plugin/nextjs");
 
 const nextConfig: NextConfig = {
   output: "standalone",
@@ -10,9 +11,14 @@ const nextConfig: NextConfig = {
   },
 };
 
-module.exports = {
-  cacheHandler: require.resolve('./cache-handler.js'),
-  cacheMaxMemorySize: 0, // disable default in-memory caching
-}
+module.exports = 
+  // images: {
+  //   remotePatterns: [new URL("https://flowbite.com/docs/images/people/")],
+  // },
+
+  withFlowbiteReact({
+    cacheHandler: require.resolve("./cache-handler.js"),
+    cacheMaxMemorySize: 0,
+  });
 
 export default nextConfig;

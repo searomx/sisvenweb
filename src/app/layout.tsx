@@ -1,5 +1,4 @@
-import { Header } from "@/components/Header";
-import NavBarLateral from "@/components/NavBarLateral";
+import { Header } from "@/components/navbar/superior/Header";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -40,7 +39,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <NavBarLateral />
           {children}
         </ThemeProvider>
       </body>

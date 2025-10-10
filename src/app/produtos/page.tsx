@@ -42,38 +42,53 @@ export default function Produtos() {
             <p className="text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
               Setores atendidos:
             </p>
-            <p>
-              Autopeças, Materiais elétricos, Calçados e confecções, Materiais de
-              construção, Distribuição em geral.
-            </p>
+            <ul className="list-disc list-inside">
+              <li>Autopeças</li>
+              <li>Materiais elétricos e hidráulicos</li>
+              <li>Calçados e confecções</li>
+              <li>Materiais de construção</li>
+              <li>Distribuição em geral</li>
+            </ul>
             <p className="text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
               Gestão Comercial:
             </p>
-            
-              <ul className="list-disc list-inside">
-                <li>Administração completa da carteira de clientes</li>
-                <li>Cadastro e controle</li>
-                <li>Histórico de compras</li>
-                <li>Limites de crédito</li>
-                <li>Condições comerciais</li>
-                <li>múltiplas fábricas por representante</li>
-                <li>Gestão de pedidos e comissões</li>
-              </ul>
-             
+
+            <ul className="list-disc list-inside">
+              <li>Administração completa da carteira de clientes</li>
+              <li>Cadastro e controle</li>
+              <li>Histórico de compras</li>
+              <li>Limites de crédito</li>
+              <li>Condições comerciais</li>
+              <li>múltiplas fábricas por representante</li>
+              <li>Gestão de pedidos e comissões</li>
+            </ul>
+
             <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
               Organização de vendedores por:
             </p>
-            <p>
-              Fábrica Região Estado Mesorregião Cidade Ramo de atividade dos
-              clientes
-            </p>
+
+            <ul className="list-disc list-inside">
+              <li>Fábrica</li>
+              <li>Região</li>
+              <li>Estado</li>
+              <li>Mesorregião</li>
+              <li>Cidade</li>
+              <li>Clientes</li>
+              <li>Ramo de atividade</li>
+            </ul>
+
             <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
               Controle de Comissões
             </p>
-            <p>
-              Cálculo automático de comissões por vendedor Relatórios detalhados
-              por período, região ou representada
-            </p>
+            <ul className="list-disc list-inside">
+              <li>Cálculo automático de comissões por:</li>
+              <ul className="list-disc list-inside pl-6">
+                <li>vendedor</li>
+                <li>Relatórios detalhados por período</li>
+                <li>região</li>
+                <li>representada</li>
+              </ul>
+            </ul>
             <p className="mt-5 text-start text-amber-500 font-bold italic sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
               Painel de Inteligência Comercial
             </p>

@@ -1,5 +1,5 @@
 "use client";
-import AutoplayVideo from "@/components/AutoPlayVideo";
+
 import Image from "next/image";
 import { Link } from "react-scroll";
 import imgGraph1 from "../../public/images/grafico1.png";
@@ -17,7 +17,7 @@ import imgTeam from "../../public/images/team.png";
 import imgWorkTeam from "../../public/images/work-team.png";
 import imgDjrDjalmas from "../../public/images/djr-djalmas.png";
 import imgDjrNorthon from "../../public/images/djr-northon.png";
-// import { ImTruck } from "react-icons/im";
+import VideoCarousel from "@/components/VideoCarousel";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
         className="min-w-full mx-auto backdrop-opacity-10 backdrop-invert relative"
       >
         <div className="flex w-full h-full justify-center mt-1 p-1 shadow-2xl shadow-cyan-300 bg-background overflow-hidden">
-          <AutoplayVideo />
+          <VideoCarousel />
         </div>
       </div>
 
@@ -61,9 +61,9 @@ export default function Home() {
                   className="object-cover"
                 />
                 <span className="text-gray-300 dark:text-gray-400 text-lg">
-                  Nossas equipe é composta por jovens talentosos tanto no
-                  desenvolvimento de novas idéias quanto no relacionamento com o
-                  cliente. Fazemos a diferença.
+                  Nosso time é TALENTOSO e ENGAJADO, tanto no desenvolvimento de
+                  novas ideias quanto no relacionamento com o cliente. FAZEMOS A
+                  DIFERENÇA!
                 </span>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function Home() {
             <div className="flex h-full dark:bg-gray-800 p-1 flex-col">
               <div className="flex items-center justify-center mb-3">
                 <h2 className="text-white dark:text-white text-lg font-medium lg:z-50">
-                  Criando inovação
+                  Criando Inovação
                 </h2>
               </div>
               <div className="flex flex-col justify-between flex-grow object-cover">
@@ -85,9 +85,10 @@ export default function Home() {
                   className="object-cover"
                 />
                 <span className="text-gray-300 dark:text-gray-400 text-lg">
-                  A todo momento estamos discutindo novas tecnologias para estar
-                  sempre atualizados fazendo com que nossos clientes estejam
-                  sempre na vanguarda.
+                  Estamos sempre ATUALIZADOS! A todo momento, discutimos novas
+                  tecnologias que podem trazer ainda mais eficiência e resultado
+                  aos nossos clientes, garantindo que estejam sempre na
+                  vanguarda.
                 </span>
               </div>
             </div>
@@ -109,9 +110,9 @@ export default function Home() {
                   priority={true}
                 />
                 <span className="text-gray-300 dark:text-gray-400 text-lg">
-                  Através de nossas reuniões semanais, trocamos experiências e
-                  aprendemos uns com os outros, para que possamos sempre
-                  melhorar e crescer juntos.
+                  Através de nossas reuniões semanais, compartilhamos
+                  experiências e conhecimento. Assim, crescemos e avançamos
+                  JUNTOS.
                 </span>
               </div>
             </div>
@@ -120,19 +121,18 @@ export default function Home() {
         <div className="flex flex-col pb-5 mb-8 max-w-screen-2xl justify-center mt-1 lg:gap-x-2 shadow-2xl shadow-cyan-300 bg-background p-5">
           <div className="flex flex-col items-center mb-3">
             <span className="text-amber-400 text-shadow-lg/30 text-shadow-amber-100 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
-              O que nós podemos fazer por você hoje?
+              O que nós podemos fazer por VOCÊ hoje?
             </span>
             <span className="text-gray-300 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
-              Juntos, vamos conectar seus clientes com suas representadas.
+              Juntos, vamos conectar os seus clientes com as suas representadas,
+              garantindo MAIS AGILIDADE NA CONVERSÃO DE NEGÓCIOS.
             </span>
           </div>
           <div className="flex flex-col justify-between flex-grow">
             <span className="text-gray-300 max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
-              Nosso aplicativo foi elaborado para dar agilidade na conversão de
-              negócios em seus clientes, ou seja, o necessário, somente o
-              necessário de ações para que você possa focar no que realmente
-              importa: &quot;Atender o máximo de clientes possível, direto ao
-              ponto!&quot;.
+              Com uma interface INTUITIVA e ÁGIL, você pode focar no que
+              realmente importa: &quot;Atender o máximo de clientes possível,
+              DIRETO AO PONTO!&quot;
             </span>
             <span className="font-sans italic text-xl text-amber-400 text-center">
               e nós fazemos o resto.
@@ -170,8 +170,8 @@ export default function Home() {
               />
 
               <span className="text-gray-300 max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
-                Você administra de forma eficiente, visual e em tempo real, o
-                desempenho de sua equipe.
+                Administre o desempenho da sua equipe de forma EFICIENTE, VISUAL
+                e EM TEMPO REAL.
               </span>
             </div>
           </div>
@@ -243,9 +243,8 @@ export default function Home() {
                     decisões rápidas.
                   </span>
                   <span className="text-md italic p-1">
-                    colocando o mouse sobre a fatia da fábrica, é retornado no
-                    verso os pedidos relativos às vendas registradas no mês
-                    corrente.
+                    Posicione o mouse sobre a representada desejada para
+                    visualizar os pedidos registrados no mês corrente.
                   </span>
                 </div>
                 <div className="absolute inset-0 h-full w-full rounded text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
@@ -329,7 +328,6 @@ export default function Home() {
                 Evolução de vendas diárias contrastando com a meta de vendas.
               </p>
             </div>
-            
           </div>
           <div>
             <div className="rounded overflow-hidden shadow-2xl shadow-cyan-300 bg-background h-full w-auto">
@@ -340,11 +338,10 @@ export default function Home() {
                 priority={true}
               />
               <p className="text-gray-300 text-sm p-1">
-                Analise o funil de vendas e identifique oportunidades de melhoria
-                em cada etapa do processo.
+                Analise o funil de vendas e identifique oportunidades de
+                melhoria em cada etapa do processo.
               </p>
             </div>
-            
           </div>
         </div>
         <Link
@@ -375,7 +372,7 @@ export default function Home() {
         ></div>
         <div className="grid grid-cols-3 items-start gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-10 lg:gap-x-2">
           <span className="text-gray-300 p-1 col-span-3 text-3xl sm:text-2xl lg:text-2xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
-            O que dizem nossos clientes.
+            O que dizem os nossos clientes.
           </span>
           <div className="flex mb-3 p-2 h-auto w-full shadow-2xl shadow-cyan-300 bg-background">
             <Image

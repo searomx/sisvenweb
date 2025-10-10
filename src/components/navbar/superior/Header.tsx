@@ -8,7 +8,8 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, UserIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { getServerSession } from "next-auth";
-import { SignOutButton } from "./sign-out-button";
+import { SignOutButton } from "@/components/sign-out-button";
+import SideBar from "../lateral/SideBar";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -25,7 +26,7 @@ const Header = async () => {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-800 shadow-xl/30 shadow-[#FFB900] fixed w-full top-0 z-50"
+      className="bg-gray-800 shadow-lg shadow-neutral-950 fixed w-full top-0 z-50"
     >
       <div className="mx-auto w-full sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
@@ -61,6 +62,10 @@ const Header = async () => {
                 className="flex h-8 w-auto lg:ml-0 xl:ml-0"
               />
             </div>
+            <div className="ml-10 inline-block sm:ml-20 lg:ml-10 xl:ml-20">
+              <SideBar />
+            </div>
+            
           </div>
           <div className="flex flex-2 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="hidden sm:ml-6 sm:block">
