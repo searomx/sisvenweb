@@ -1,8 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 
 export default function VideoCarousel() {
   const videos = [
@@ -13,8 +16,8 @@ export default function VideoCarousel() {
 
   return (
     <Swiper
-      modules={[Autoplay]}
-      autoplay={{ delay: 4000, disableOnInteraction: true }}
+      modules={[Navigation, Pagination, Autoplay]}
+      autoplay={{ delay: 3000, disableOnInteraction: true }}
       loop
       spaceBetween={30}
       slidesPerView={1}

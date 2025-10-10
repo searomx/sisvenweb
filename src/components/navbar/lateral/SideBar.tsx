@@ -1,7 +1,6 @@
 "use client";
 import { Link } from "react-scroll";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars4Icon } from "@heroicons/react/24/outline";
 import {
   HiCog8Tooth,
