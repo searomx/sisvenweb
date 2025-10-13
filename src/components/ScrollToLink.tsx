@@ -8,8 +8,6 @@ interface ScrollToLinkProps extends ComponentPropsWithRef<typeof Link> {
     scrollToId: string;
 }
 
-
-
 function ScrollToLink({ children, scrollToId, href, ...props }: ScrollToLinkProps) {
     const searchParams = useSearchParams();
 

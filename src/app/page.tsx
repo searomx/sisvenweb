@@ -18,6 +18,8 @@ import imgWorkTeam from "../../public/images/work-team.png";
 import imgDjrDjalmas from "../../public/images/djr-djalmas.png";
 import imgDjrNorthon from "../../public/images/djr-northon.png";
 import VideoCarousel from "@/components/VideoCarousel";
+import { TextoDejalmas } from "@/components/textos/TextoDejalmas";
+import { TextoNorthon } from "@/components/textos/TextoNorthon";
 
 export default function Home() {
   return (
@@ -46,9 +48,9 @@ export default function Home() {
         </div>
         <div className="flex flex-col pb-5 gap-y-2 max-w-screen-xl justify-center mt-1 lg:flex-row lg:flex-wrap lg:gap-x-2">
           <div className="w-full sm:max-w-sm lg:w-full md:w-full h-auto m-auto shadow-2xl shadow-cyan-300 bg-background">
-            <div className="flex h-full dark:bg-gray-800 p-1 flex-col">
+            <div className="flex flex-col h-full dark:bg-gray-950 p-2 bg-gray-950">
               <div className="flex items-center justify-center mb-3">
-                <h2 className="text-white dark:text-white text-lg font-medium lg:z-50">
+                <h2 className="text-gray-600 dark:text-white text-lg font-medium lg:z-50">
                   Work Team
                 </h2>
               </div>
@@ -60,7 +62,7 @@ export default function Home() {
                   priority={true}
                   className="object-cover"
                 />
-                <span className="text-gray-300 dark:text-gray-400 text-lg">
+                <span className="text-gray-600 dark:text-gray-400 text-lg">
                   Nosso time é TALENTOSO e ENGAJADO, tanto no desenvolvimento de
                   novas ideias quanto no relacionamento com o cliente. FAZEMOS A
                   DIFERENÇA!
@@ -70,7 +72,7 @@ export default function Home() {
           </div>
 
           <div className="w-full sm:max-w-sm lg:w-full h-auto m-auto shadow-xl shadow-cyan-300 bg-background">
-            <div className="flex h-full dark:bg-gray-800 p-1 flex-col">
+            <div className="flex flex-col h-full dark:bg-gray-950 p-2 bg-gray-950">
               <div className="flex items-center justify-center mb-3">
                 <h2 className="text-white dark:text-white text-lg font-medium lg:z-50">
                   Criando Inovação
@@ -84,7 +86,7 @@ export default function Home() {
                   priority={true}
                   className="object-cover"
                 />
-                <span className="text-gray-300 dark:text-gray-400 text-lg">
+                <span className="text-gray-600 dark:text-gray-400 text-lg">
                   Estamos sempre ATUALIZADOS! A todo momento, discutimos novas
                   tecnologias que podem trazer ainda mais eficiência e resultado
                   aos nossos clientes, garantindo que estejam sempre na
@@ -95,7 +97,7 @@ export default function Home() {
           </div>
 
           <div className="w-full sm:max-w-sm lg:w-full h-auto m-auto shadow-xl shadow-cyan-300 bg-background">
-            <div className="flex h-full dark:bg-gray-800 p-1 flex-col">
+            <div className="flex flex-col h-full dark:bg-gray-950 p-2 bg-gray-950">
               <div className="flex items-center justify-center mb-3">
                 <h2 className="text-white dark:text-white text-lg font-medium lg:z-50">
                   Troca de Experiências
@@ -109,7 +111,7 @@ export default function Home() {
                   sizes="100vw"
                   priority={true}
                 />
-                <span className="text-gray-300 dark:text-gray-400 text-lg">
+                <span className="text-gray-600 dark:text-gray-400 text-lg">
                   Através de nossas reuniões semanais, compartilhamos
                   experiências e conhecimento. Assim, crescemos e avançamos
                   JUNTOS.
@@ -119,17 +121,17 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col pb-5 mb-8 max-w-screen-2xl justify-center mt-1 lg:gap-x-2 shadow-2xl shadow-cyan-300 bg-background p-5">
-          <div className="flex flex-col items-center mb-3">
-            <span className="text-amber-400 text-shadow-lg/30 text-shadow-amber-100 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+          <div className="flex flex-col items-center bg-gray-950 mb-3">
+            <span className="text-amber-400 text-shadow-lg/30 text-shadow-amber-100 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
               O que nós podemos fazer por VOCÊ hoje?
             </span>
-            <span className="text-gray-300 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+            <span className="text-gray-600 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
               Juntos, vamos conectar os seus clientes com as suas representadas,
               garantindo MAIS AGILIDADE NA CONVERSÃO DE NEGÓCIOS.
             </span>
           </div>
-          <div className="flex flex-col justify-between flex-grow">
-            <span className="text-gray-300 max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+          <div className="flex flex-col justify-between bg-gray-950 flex-grow">
+            <span className="text-gray-600 max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
               Com uma interface INTUITIVA e ÁGIL, você pode focar no que
               realmente importa: &quot;Atender o máximo de clientes possível,
               DIRETO AO PONTO!&quot;
@@ -153,12 +155,12 @@ export default function Home() {
               Como funciona o SGV
             </span>
           </div>
-          <span className="text-gray-300 text-shadow-lg/30 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+          <div className="text-gray-600 text-shadow-lg/30 max-[600px]:text-3xl items-center justify-center text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
             Dashboard Intuitivo
-          </span>
+          </div>
 
           <div className="flex flex-col gap-y-2 w-full justify-center mt-1 lg:gap-x-2 shadow-xl shadow-cyan-300 bg-background">
-            <div className="flex flex-col min-h-auto overflow-hidden bg-background object-cover p-1">
+            <div className="flex flex-col min-h-auto overflow-hidden bg-gray-950 object-cover p-1">
               <Image
                 src="/images/img-dash-1.png"
                 alt="img-dashboard"
@@ -169,7 +171,7 @@ export default function Home() {
                 className="object-cover w-full max-w-full"
               />
 
-              <span className="text-gray-300 max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+              <span className="text-gray-600 max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
                 Administre o desempenho da sua equipe de forma EFICIENTE, VISUAL
                 e EM TEMPO REAL.
               </span>
@@ -206,7 +208,7 @@ export default function Home() {
         id="gestao"
         className="flex w-full flex-wrap justify-center p-1 items-center"
       >
-        <span className="text-zinc-300 text-3xl lg:text-1xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
+        <span className="text-zinc-600 text-3xl lg:text-1xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
           Administre de maneira rápida e intuitiva através dos painéis de
           gestão.
         </span>
@@ -220,7 +222,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-300 text-sm p-1">
+            <span className="text-gray-600 text-sm p-1">
               Acompanhe o desempenho de sua equipe de vendas e compare com
               períodos anteriores.
             </span>
@@ -238,7 +240,7 @@ export default function Home() {
                     priority={true}
                   />
 
-                  <span className="text-gray-300 text-sm p-1">
+                  <span className="text-gray-600 text-sm p-1">
                     Acompanhe em tempo real o desempenho de cada fábrica e tome
                     decisões rápidas.
                   </span>
@@ -268,7 +270,7 @@ export default function Home() {
               height={800}
               priority={true}
             />
-            <span className="text-gray-300 text-sm p-1">
+            <span className="text-gray-600 text-sm p-1">
               Acompanhe em tempo real a evolução de vendas x metas.
             </span>
           </div>
@@ -279,7 +281,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-300 text-sm p-1">
+            <span className="text-gray-600 text-sm p-1">
               Acompanhe a evolução individual de vendas x metas
             </span>
           </div>
@@ -290,7 +292,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-300 text-sm p-1">
+            <span className="text-gray-600 text-sm p-1">
               Ranking de Clientes na Curva ABC.
             </span>
           </div>
@@ -301,7 +303,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-300 text-sm p-1">
+            <span className="text-gray-600 text-sm p-1">
               Faturamento acumulado por fábrica no ano corrente.
             </span>
           </div>
@@ -312,7 +314,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <p className="text-gray-300 text-sm p-1">
+            <p className="text-gray-600 text-sm p-1">
               Faturamento distribuido por atividade do cliente no mês corrente.
             </p>
           </div>
@@ -324,7 +326,7 @@ export default function Home() {
                 sizes="100vw"
                 priority={true}
               />
-              <p className="text-gray-300 text-sm p-1">
+              <p className="text-gray-600 text-sm p-1">
                 Evolução de vendas diárias contrastando com a meta de vendas.
               </p>
             </div>
@@ -337,7 +339,7 @@ export default function Home() {
                 sizes="100vw"
                 priority={true}
               />
-              <p className="text-gray-300 text-sm p-1">
+              <p className="text-gray-600 text-sm p-1">
                 Analise o funil de vendas e identifique oportunidades de
                 melhoria em cada etapa do processo.
               </p>
@@ -363,150 +365,109 @@ export default function Home() {
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </Link>
-        {/* Fim da Terceira Pagina*/}
-
-        {/* Início da Quarta Pagina*/}
-        <div
-          id="depoimentos"
-          className="flex p-1 bg-slate-50 w-full h-5 justify-center items-center"
-        ></div>
-        <div className="grid grid-cols-3 items-start gap-4 pb-5 gap-y-2 max-w-screen-xl h-auto justify-center mt-10 lg:gap-x-2">
-          <span className="text-gray-300 p-1 col-span-3 text-3xl sm:text-2xl lg:text-2xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
-            O que dizem os nossos clientes.
-          </span>
-          <div className="flex mb-3 p-2 h-auto w-full shadow-2xl shadow-cyan-300 bg-background">
-            <Image
-              src={imgDjrDjalmas}
-              alt="img-djalmas-djr"
-              sizes="100vw"
-              priority={true}
-              className="m-auto object-cover"
-            />
-          </div>
-          <div className="items-center  shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 col-span-2 h-auto sm:overflow-y-scroll sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
-            <p className="text-gray-300">
-              &quot;Há duas décadas, quando decidimos implementar o SGV Gestão
-              de Vendas em nossa empresa, não imaginávamos o impacto
-              transformador que essa decisão teria. Na época, enfrentávamos
-              dificuldades para organizar nossos processos comerciais,
-              acompanhar o desempenho da equipe e entender com clareza os
-              números do nosso negócio. O SGV chegou como uma solução completa,
-              intuitiva e eficiente, que revolucionou a forma como gerenciamos
-              nossas vendas.
-            </p>
-            <p className="text-gray-300">
-              Com o passar dos anos, o SGV evoluiu junto com a nossa empresa. A
-              cada atualização, novas funcionalidades foram incorporadas, sempre
-              alinhadas às necessidades do mercado e às exigências do nosso
-              crescimento. Hoje, temos uma visão estratégica em tempo real,
-              conseguimos tomar decisões com base em dados concretos e nossa
-              equipe comercial atua com muito mais agilidade e precisão. Graças
-              ao SGV, nossas vendas cresceram de forma consistente, e
-              conseguimos expandir nossa atuação para novos mercados.
-            </p>
-            <p className="italic text-amber-600">
-              O software não é apenas uma ferramenta — é um parceiro de
-              negócios.
-            </p>
-            <p className="text-gray-300">
-              Se estamos onde estamos hoje, com uma empresa sólida e em
-              constante evolução, muito se deve à confiança e ao suporte que o
-              SGV nos proporcionou ao longo desses 20 anos.&quot;
-            </p>
-            <p className="text-gray-300">- Dejalmas de Oliveira </p>
-            <p>- Djr Representações Comerciais</p>
-            <p>- Chapecó - SC</p>
-          </div>
-          <div className="flex mb-3 p-2 h-auto w-full shadow-2xl shadow-cyan-300 bg-background">
-            <Image
-              src={imgDjrNorthon}
-              alt="img-northon-djr"
-              sizes="100vw"
-              priority={true}
-              className="m-auto  object-cover"
-            />
-          </div>
-          <div className="items-center  shadow-2xl shadow-cyan-300 bg-background mb-3 p-2 col-span-2 h-auto sm:overflow-y-scroll sm:text-0.5sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
-            <p className="text-gray-300">
-              &quot;Trabalhamos com representação comercial há mais de 25 anos,
-              e posso dizer com tranquilidade que o SGV Gestão de Vendas foi um
-              divisor de águas na nossa operação. Desde que adotamos o sistema,
-              conseguimos transformar completamente nossa abordagem de
-              prospecção e conversão de vendas.
-            </p>
-            <p className="text-gray-300">
-              Antes do SGV, o processo de identificar leads qualificados era
-              lento e pouco eficiente. Hoje, com os recursos de segmentação,
-              histórico de contatos e acompanhamento de oportunidades,
-              conseguimos mapear com precisão os clientes com maior potencial.
-              Isso nos permite agir de forma estratégica, com ofertas
-              personalizadas e no momento certo. Além disso, o SGV nos dá uma
-              visão clara do funil de vendas, facilitando o acompanhamento de
-              cada etapa e otimizando o tempo da equipe.
-            </p>
-            <p className="text-gray-300">
-              A taxa de conversão aumentou significativamente, e conseguimos
-              ampliar nossa carteira de clientes sem perder o controle da
-              operação.
-            </p>
-            <p className="text-gray-300">
-              O SGV não é apenas um software — é uma ferramenta inteligente que
-              trabalha junto com a gente.
-            </p>
-            <p className="text-gray-300">
-              Ele nos ajuda a enxergar oportunidades onde antes víamos
-              obstáculos. Para a DJR Representações, é sinônimo de crescimento
-              sustentável e vendas com propósito&quot;
-            </p>
-            <p className="text-gray-300">- Northon - Gerente Comercial </p>
-            <p>- DJR Representações Comerciais</p>
-            <p>- Chapecó - SC</p>
-          </div>
-        </div>
-
-        <div
-          id="segmentos"
-          className="flex p-1 bg-slate-50 w-full justify-center items-center"
-        >
-          <span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium flex text-wrap lg:text-wrap text-center">
-            Segmentos Atendidos
-          </span>
-        </div>
-        <div className="flex gap-2 max-w-screen-xl justify-center mt-1 shadow-2xl shadow-cyan-300 bg-background">
-          <ul className="list-disc list-inside text-lg">
-            <li>Indústrias de Auto Peças</li>
-            <li>Indústrias de Alimentos e Bebidas</li>
-            <li>Indústrias de Sapatos</li>
-            <li>Indústrias de Materiais Elétricos</li>
-            <li>Indústrias de Materiais de Construção</li>
-            <li>Indústrias Farmacêuticas</li>
-            <li>Distribuidoras em Geral</li>
-            <li>Comércio Atacadista</li>
-          </ul>
-        </div>
-        <div>
-          <Link
-            to="topo"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer mt-3 text-slate-300 dark:text-white hover:text-tomato inline-flex items-center"
-          >
-            Retornar ao topo
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-4 h-4 ml-2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </Link>
-        </div>
-        {/* Fim da Quarta pagina*/}
       </div>
+      {/* Fim da Terceira Pagina*/}
+
+      {/* Início da Quarta Pagina*/}
+      <div id="depoimentos"></div>
+      <div className="mb-1 p-1 h-auto w-full bg-background shadow-2xl shadow-cyan-300">
+        <span
+          className={`flex text-gray-600 p-1 
+            text-3xl sm:text-md justify-center
+            lg:text-2xl md:text-xl font-medium 
+            text-wrap lg:text-wrap text-center`}
+        >
+          O que dizem os nossos clientes.
+        </span>
+      </div>
+      <div className="max-w-screen-xl w-full h-auto mx-auto px-5 sm:p-10 md:p-16">
+        <div className="mb-1 p-1 h-auto w-full shadow-2xl shadow-cyan-300 bg-background">
+          <Image
+            src={imgDjrDjalmas}
+            alt="img-djalmas-djr"
+            sizes="100vw"
+            priority={true}
+            className="m-auto object-cover"
+          />
+        </div>
+
+        <div
+          className={`items-center shadow-2xl
+             shadow-cyan-300 bg-background mb-1 
+             p-2 col-span-2 h-auto sm:overflow-y-scroll 
+             sm:text-0.5sm md:text-lg lg:text-lg 
+             lg:text-wrap sm:text-wrap`}
+        >
+          <TextoDejalmas />
+        </div>
+      </div>
+
+      <div className="max-w-screen-xl w-full h-auto mx-auto px-5 py-1 sm:p-10 md:p-16">
+        <div className="mb-1 p-2 h-auto w-full shadow-2xl shadow-cyan-300 bg-background">
+          <Image
+            src={imgDjrNorthon}
+            alt="img-northon-djr"
+            width={200}
+            height={300}
+            priority={true}
+            className="m-auto object-cover"
+          />
+        </div>
+        <div
+          className={`items-center shadow-2xl
+             shadow-cyan-300 bg-background
+             mb-3 p-2 col-span-2 h-auto 
+             sm:overflow-y-scroll sm:text-0.5sm 
+             md:text-lg lg:text-lg lg:text-wrap sm:text-wrap`}
+        >
+          <TextoNorthon />
+        </div>
+      </div>
+
+      {/* Segmentos Atendidos */}
+
+      <div
+        id="segmentos"
+        className="flex p-1 bg-slate-50 w-full justify-center items-center"
+      >
+        <span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium flex text-wrap lg:text-wrap text-center">
+          Segmentos Atendidos
+        </span>
+      </div>
+      <div className="flex gap-2 max-w-screen-xl max-h-full justify-center mt-1 shadow-2xl shadow-cyan-300 bg-background">
+        <ul className="list-disc list-inside text-lg text-gray-600 p-5 sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+          <li>Indústrias de Auto Peças</li>
+          <li>Indústrias de Alimentos e Bebidas</li>
+          <li>Indústrias de Sapatos</li>
+          <li>Indústrias de Materiais Elétricos</li>
+          <li>Indústrias de Materiais de Construção</li>
+          <li>Indústrias Farmacêuticas</li>
+          <li>Distribuidoras em Geral</li>
+          <li>Comércio Atacadista</li>
+        </ul>
+      </div>
+      <div>
+        <Link
+          to="topo"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer mt-3 text-slate-300 dark:text-white hover:text-tomato inline-flex items-center"
+        >
+          Retornar ao topo
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </Link>
+      </div>
+      {/* Fim da Quarta pagina*/}
     </div>
   );
 }

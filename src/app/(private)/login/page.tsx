@@ -40,7 +40,7 @@ const Signin = () => {
         onSubmit={handleSubmit}
       >
         {error && <div className="">{error}</div>}
-        <h1 className="mb-5 w-full text-2xl	font-bold">Signin</h1>
+        <h1 className="mb-5 w-full text-2xl	font-bold">Login</h1>
 
         <label className={labelStyles}>Email:</label>
         <input

@@ -58,24 +58,7 @@ export default function SideBar() {
             </Link>
             </div>
           </MenuItem>
-          <MenuItem>
-          <div style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.1)" }}>
-            <Link
-              to="segmentos"
-              smooth={true}
-              duration={500}
-              className={`block px-4 py-2 text-sm
-                 text-gray-300 data-focus:bg-white/5
-                  data-focus:text-white 
-                  data-focus:outline-hidden`}
-            >
-              <div className="flex gap-2 text-sm font-medium">
-                <HiMiniSwatch className="size-5 text-emerald-500" />
-                <span>Segmentos</span>
-              </div>
-            </Link>
-            </div>
-          </MenuItem>
+          
           <form action="#" method="POST">
             <MenuItem>
             <div style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.1)" }}>
@@ -95,6 +78,24 @@ export default function SideBar() {
               </Link>
               </div>
             </MenuItem>
+            <MenuItem>
+          <div style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.1)" }}>
+            <Link
+              to="segmentos"
+              smooth={true}
+              duration={500}
+              className={`block px-4 py-2 text-sm
+                 text-gray-300 data-focus:bg-white/5
+                  data-focus:text-white 
+                  data-focus:outline-hidden`}
+            >
+              <div className="flex gap-2 text-sm font-medium">
+                <HiMiniSwatch className="size-5 text-emerald-500" />
+                <span>Segmentos</span>
+              </div>
+            </Link>
+            </div>
+          </MenuItem>
           </form>
         </div>
       </MenuItems>

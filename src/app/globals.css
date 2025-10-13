@@ -113,15 +113,6 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
-@keyframes fade-in {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes fade-out {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
-}
 
 @layer base {
   * {
@@ -152,19 +143,6 @@ Image {
   width: auto;
   height: auto;
 }
-video {
-  transition: opacity 0.8s ease-in-out;
-  opacity: 1;
-}
-
-.fade-out {
-  opacity: 0;
-}
-
-.fade-in {
-  opacity: 1;
-}
-
 
 
 /** @tailwind base;

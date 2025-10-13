@@ -96,11 +96,11 @@ const Header = async () => {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
-              <UserIcon aria-hidden="true" className="size-6" />
+              <UserIcon aria-hidden="true" className="size-6 sm:size-3" />
             </button>
             <div className="flex items-center justify-end ml-2">
               <Link href="/login">
-                <span className="text-lg font-semibold text-zinc-300">
+                <span className="text-lg sm:text-[0.7rem] font-semibold text-zinc-300">
                   Área do cliente
                 </span>
               </Link>
