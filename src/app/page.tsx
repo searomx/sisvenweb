@@ -22,7 +22,8 @@ import { TextoDejalmas } from "@/components/textos/TextoDejalmas";
 import { TextoNorthon } from "@/components/textos/TextoNorthon";
 
 export default function Home() {
-  const fonteTexto = "font-sans text-lg dark:text-gray-200 text-gray-600 sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap";
+  const fonteTexto =
+    "font-sans text-lg dark:text-gray-200 text-gray-600 sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap";
   return (
     <div className="container sm:max-w-screen mx-auto bg-neutral-950 dark:bg-neutral-900">
       <div
@@ -37,13 +38,13 @@ export default function Home() {
       {/* Primeira Pagina */}
       <div className="flex w-full flex-wrap items-center justify-center mt-10 m-auto lg:max-w-screen-xl">
         <div className="flex flex-col w-full items-center mb-3 text-start">
-          <span className="max-[600px]:text-2xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+          <span className="max-[600px]:text-2xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
             O Que é o Sistema de Gerenciamento de Vendas - SGV.
           </span>
-          <span className="text-zinc-300 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+          <span className="text-zinc-300 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
             Administração de vendas de maneira eficaz.
           </span>
-          <span className="text-amber-500 text-shadow-lg/30 text-3xl lg:text-1xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
+          <span className="text-amber-500 text-shadow-lg/30 text-3xl lg:text-1xl md:text-md font-medium flex text-wrap lg:text-wrap text-center">
             Tudo na palma da sua mão.
           </span>
         </div>
@@ -126,13 +127,17 @@ export default function Home() {
             <span className="text-amber-400 bg-gray-950 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
               O que nós podemos fazer por VOCÊ hoje?
             </span>
-            <span className={`${fonteTexto} max-[600px]:text-2xl text-5xl lg:text-2xl md:text-sm sm:text-sm font-medium text-wrap lg:text-wrap text-center`}>
+            <span
+              className={`${fonteTexto} max-[600px]:text-2xl text-5xl lg:text-2xl md:text-sm sm:text-sm font-medium text-wrap lg:text-wrap text-center`}
+            >
               Juntos, vamos conectar os seus clientes com as suas representadas,
               garantindo MAIS AGILIDADE NA CONVERSÃO DE NEGÓCIOS.
             </span>
           </div>
           <div className="flex flex-col justify-between bg-gray-950 flex-grow">
-            <span className={`${fonteTexto} max-[600px]:text-2xl italic text-5xl lg:text-lg md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}>
+            <span
+              className={`${fonteTexto} max-[600px]:text-2xl italic text-5xl lg:text-lg md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}
+            >
               Com uma interface INTUITIVA e ÁGIL, você pode focar no que
               realmente importa: &quot;Atender o máximo de clientes possível,
               DIRETO AO PONTO!&quot;
@@ -152,11 +157,13 @@ export default function Home() {
       >
         <div className="items-center mb-3 p-2">
           <div className="flex p-1 bg-slate-50 w-full justify-center items-center">
-            <span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium flex text-wrap lg:text-wrap text-center">
+            <span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium flex text-wrap lg:text-wrap text-center">
               Como funciona o SGV
             </span>
           </div>
-          <div className={`${fonteTexto} text-shadow-lg/30 max-[600px]:text-3xl items-center justify-center text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}>
+          <div
+            className={`${fonteTexto} text-shadow-lg/30 max-[600px]:text-3xl items-center justify-center text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}
+          >
             Dashboard Intuitivo
           </div>
 
@@ -171,7 +178,9 @@ export default function Home() {
                 sizes="100vw"
                 className="object-cover w-full max-w-full"
               />
-              <span className={`${fonteTexto} max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}>
+              <span
+                className={`${fonteTexto} max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}
+              >
                 Administre o desempenho da sua equipe de forma EFICIENTE, VISUAL
                 e EM TEMPO REAL.
               </span>
@@ -208,7 +217,9 @@ export default function Home() {
         id="gestao"
         className="flex w-full flex-wrap justify-center p-1 items-center"
       >
-        <span className={`${fonteTexto} text-2xl lg:text-3xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center`}>
+        <span
+          className={`${fonteTexto} text-2xl lg:text-3xl md:text-md font-medium flex text-wrap lg:text-wrap text-center`}
+        >
           Administre de maneira rápida e intuitiva através dos painéis de
           gestão.
         </span>
@@ -430,12 +441,16 @@ export default function Home() {
         id="segmentos"
         className="flex p-1 bg-slate-50 w-full justify-center items-center"
       >
-        <span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium flex text-wrap lg:text-wrap text-center">
+        <span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-lg sm:text-sm font-medium flex text-wrap lg:text-wrap text-center">
           Segmentos Atendidos
         </span>
       </div>
-      <div className={`${fonteTexto} flex mb-6 max-w-screen-xl max-h-full justify-center mt-1 shadow-2xl shadow-cyan-300 bg-background`}>
-        <ul className={`list-disc list-inside text-lg p-5 sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap`}>
+      <div
+        className={`${fonteTexto} flex mb-6 max-w-screen-xl max-h-full justify-center mt-1 shadow-2xl shadow-cyan-300 bg-background`}
+      >
+        <ul
+          className={`list-disc list-inside text-lg p-5 sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap`}
+        >
           <li>Indústrias de Auto Peças</li>
           <li>Indústrias de Alimentos e Bebidas</li>
           <li>Indústrias de Sapatos</li>
