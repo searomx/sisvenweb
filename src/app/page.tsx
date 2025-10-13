@@ -22,6 +22,7 @@ import { TextoDejalmas } from "@/components/textos/TextoDejalmas";
 import { TextoNorthon } from "@/components/textos/TextoNorthon";
 
 export default function Home() {
+  const fonteTexto = "font-sans text-lg dark:text-gray-200 text-gray-600 sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap";
   return (
     <div className="container sm:max-w-screen mx-auto bg-neutral-950 dark:bg-neutral-900">
       <div
@@ -50,7 +51,7 @@ export default function Home() {
           <div className="w-full sm:max-w-sm lg:w-full md:w-full h-auto m-auto shadow-2xl shadow-cyan-300 bg-background">
             <div className="flex flex-col h-full dark:bg-gray-950 p-2 bg-gray-950">
               <div className="flex items-center justify-center mb-3">
-                <h2 className="text-gray-600 dark:text-white text-lg font-medium lg:z-50">
+                <h2 className="{fonteTexto} dark:text-white text-lg font-medium lg:z-50">
                   Work Team
                 </h2>
               </div>
@@ -62,7 +63,7 @@ export default function Home() {
                   priority={true}
                   className="object-cover"
                 />
-                <span className="text-gray-600 dark:text-gray-400 text-lg">
+                <span className="{fonteTexto} dark:text-gray-400 text-lg">
                   Nosso time é TALENTOSO e ENGAJADO, tanto no desenvolvimento de
                   novas ideias quanto no relacionamento com o cliente. FAZEMOS A
                   DIFERENÇA!
@@ -86,7 +87,7 @@ export default function Home() {
                   priority={true}
                   className="object-cover"
                 />
-                <span className="text-gray-600 dark:text-gray-400 text-lg">
+                <span className="{fonteTexto} dark:text-gray-400 text-lg">
                   Estamos sempre ATUALIZADOS! A todo momento, discutimos novas
                   tecnologias que podem trazer ainda mais eficiência e resultado
                   aos nossos clientes, garantindo que estejam sempre na
@@ -111,7 +112,7 @@ export default function Home() {
                   sizes="100vw"
                   priority={true}
                 />
-                <span className="text-gray-600 dark:text-gray-400 text-lg">
+                <span className="{fonteTexto} dark:text-gray-400 text-lg">
                   Através de nossas reuniões semanais, compartilhamos
                   experiências e conhecimento. Assim, crescemos e avançamos
                   JUNTOS.
@@ -120,18 +121,18 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col pb-5 mb-8 max-w-screen-2xl justify-center mt-1 lg:gap-x-2 shadow-2xl shadow-cyan-300 bg-background p-5">
+        <div className="flex flex-col pb-5 gap-y-2 max-w-screen-xl shadow-xl shadow-cyan-300 justify-center mt-1 lg:flex-row lg:flex-wrap lg:gap-x-2">
           <div className="flex flex-col items-center bg-gray-950 mb-3">
-            <span className="text-amber-400 text-shadow-lg/30 text-shadow-amber-100 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+            <span className="text-amber-400 bg-gray-950 max-[600px]:text-3xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
               O que nós podemos fazer por VOCÊ hoje?
             </span>
-            <span className="text-gray-600 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+            <span className={`${fonteTexto} max-[600px]:text-2xl text-5xl lg:text-2xl md:text-sm sm:text-sm font-medium text-wrap lg:text-wrap text-center`}>
               Juntos, vamos conectar os seus clientes com as suas representadas,
               garantindo MAIS AGILIDADE NA CONVERSÃO DE NEGÓCIOS.
             </span>
           </div>
           <div className="flex flex-col justify-between bg-gray-950 flex-grow">
-            <span className="text-gray-600 max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-xl sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+            <span className={`${fonteTexto} max-[600px]:text-2xl italic text-5xl lg:text-lg md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}>
               Com uma interface INTUITIVA e ÁGIL, você pode focar no que
               realmente importa: &quot;Atender o máximo de clientes possível,
               DIRETO AO PONTO!&quot;
@@ -155,7 +156,7 @@ export default function Home() {
               Como funciona o SGV
             </span>
           </div>
-          <div className="text-gray-600 text-shadow-lg/30 max-[600px]:text-3xl items-center justify-center text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+          <div className={`${fonteTexto} text-shadow-lg/30 max-[600px]:text-3xl items-center justify-center text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}>
             Dashboard Intuitivo
           </div>
 
@@ -170,8 +171,7 @@ export default function Home() {
                 sizes="100vw"
                 className="object-cover w-full max-w-full"
               />
-
-              <span className="text-gray-600 max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
+              <span className={`${fonteTexto} max-[600px]:text-2xl italic text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center`}>
                 Administre o desempenho da sua equipe de forma EFICIENTE, VISUAL
                 e EM TEMPO REAL.
               </span>
@@ -208,7 +208,7 @@ export default function Home() {
         id="gestao"
         className="flex w-full flex-wrap justify-center p-1 items-center"
       >
-        <span className="text-zinc-600 text-3xl lg:text-1xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center">
+        <span className={`${fonteTexto} text-2xl lg:text-3xl md:text-xl font-medium flex text-wrap lg:text-wrap text-center`}>
           Administre de maneira rápida e intuitiva através dos painéis de
           gestão.
         </span>
@@ -222,7 +222,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-600 text-sm p-1">
+            <span className={`${fonteTexto} text-sm p-1`}>
               Acompanhe o desempenho de sua equipe de vendas e compare com
               períodos anteriores.
             </span>
@@ -240,7 +240,7 @@ export default function Home() {
                     priority={true}
                   />
 
-                  <span className="text-gray-600 text-sm p-1">
+                  <span className={`${fonteTexto} text-sm p-1`}>
                     Acompanhe em tempo real o desempenho de cada fábrica e tome
                     decisões rápidas.
                   </span>
@@ -270,7 +270,7 @@ export default function Home() {
               height={800}
               priority={true}
             />
-            <span className="text-gray-600 text-sm p-1">
+            <span className={`${fonteTexto} text-sm p-1`}>
               Acompanhe em tempo real a evolução de vendas x metas.
             </span>
           </div>
@@ -281,7 +281,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-600 text-sm p-1">
+            <span className={`${fonteTexto} text-sm p-1`}>
               Acompanhe a evolução individual de vendas x metas
             </span>
           </div>
@@ -292,7 +292,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-600 text-sm p-1">
+            <span className={`${fonteTexto} text-sm p-1`}>
               Ranking de Clientes na Curva ABC.
             </span>
           </div>
@@ -303,7 +303,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <span className="text-gray-600 text-sm p-1">
+            <span className={`${fonteTexto} text-sm p-1`}>
               Faturamento acumulado por fábrica no ano corrente.
             </span>
           </div>
@@ -314,7 +314,7 @@ export default function Home() {
               sizes="100vw"
               priority={true}
             />
-            <p className="text-gray-600 text-sm p-1">
+            <p className={`${fonteTexto} text-sm p-1`}>
               Faturamento distribuido por atividade do cliente no mês corrente.
             </p>
           </div>
@@ -326,7 +326,7 @@ export default function Home() {
                 sizes="100vw"
                 priority={true}
               />
-              <p className="text-gray-600 text-sm p-1">
+              <p className={`${fonteTexto} text-sm p-1`}>
                 Evolução de vendas diárias contrastando com a meta de vendas.
               </p>
             </div>
@@ -339,7 +339,7 @@ export default function Home() {
                 sizes="100vw"
                 priority={true}
               />
-              <p className="text-gray-600 text-sm p-1">
+              <p className={`${fonteTexto} text-sm p-1`}>
                 Analise o funil de vendas e identifique oportunidades de
                 melhoria em cada etapa do processo.
               </p>
@@ -372,7 +372,7 @@ export default function Home() {
       <div id="depoimentos"></div>
       <div className="mb-1 p-1 h-auto w-full bg-background shadow-2xl shadow-cyan-300">
         <span
-          className={`flex text-gray-600 p-1 
+          className={`${fonteTexto} flex  p-1 
             text-3xl sm:text-md justify-center
             lg:text-2xl md:text-xl font-medium 
             text-wrap lg:text-wrap text-center`}
@@ -434,8 +434,8 @@ export default function Home() {
           Segmentos Atendidos
         </span>
       </div>
-      <div className="flex gap-2 max-w-screen-xl max-h-full justify-center mt-1 shadow-2xl shadow-cyan-300 bg-background">
-        <ul className="list-disc list-inside text-lg text-gray-600 p-5 sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+      <div className={`${fonteTexto} flex mb-6 max-w-screen-xl max-h-full justify-center mt-1 shadow-2xl shadow-cyan-300 bg-background`}>
+        <ul className={`list-disc list-inside text-lg p-5 sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap`}>
           <li>Indústrias de Auto Peças</li>
           <li>Indústrias de Alimentos e Bebidas</li>
           <li>Indústrias de Sapatos</li>

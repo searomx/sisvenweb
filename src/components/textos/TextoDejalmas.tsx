@@ -1,7 +1,7 @@
 export const TextoDejalmas = () => {
   return (
     <>
-      <p className="text-gray-600 text-start sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+      <p className="dark:text-white text-gray-900 text-start sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
         &quot;Há duas décadas, quando decidimos implementar o SGV Gestão de
         Vendas em nossa empresa, não imaginávamos o impacto transformador que
         essa decisão teria. Na época, enfrentávamos dificuldades para organizar
@@ -10,14 +10,14 @@ export const TextoDejalmas = () => {
         solução completa, intuitiva e eficiente, que revolucionou a forma como
         gerenciamos nossas vendas.&quot;
       </p>
-      <p className="text-gray-600">
+      <p className="dark:text-white text-gray-900 text-start sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
         Se estamos onde estamos hoje, com uma empresa sólida e em constante
         evolução, muito se deve à confiança e ao suporte que o SGV nos
         proporcionou ao longo desses 20 anos.&quot;
       </p>
-      <p className="text-gray-600">- Dejalmas de Oliveira </p>
-      <p className="text-gray-600">- Djr Representações Comerciais</p>
-      <p className="text-gray-600">- Chapecó - SC</p>
+      <p className="dark:text-white text-gray-900">- Dejalmas de Oliveira </p>
+      <p className="dark:text-white text-gray-900">- Djr Representações Comerciais</p>
+      <p className="dark:text-white text-gray-900">- Chapecó - SC</p>
     </>
   );
 };

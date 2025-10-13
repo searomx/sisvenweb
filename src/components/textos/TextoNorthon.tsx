@@ -1,7 +1,7 @@
 export const TextoNorthon = () => {
   return (
     <>
-      <p className="text-gray-600 text-start sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
+      <p className="dark:text-white text-gray-900 text-start sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
         &quot;Há mais de 20 anos, quando decidimos implementar o SGV Gestão de
         Vendas em nossa empresa, não imaginávamos o impacto positivo que essa
         decisão teria em nossos negócios. Naquela época, enfrentávamos desafios
@@ -11,13 +11,13 @@ export const TextoNorthon = () => {
         ferramenta robusta e intuitiva, que rapidamente se integrou aos nossos
         processos diários.
       </p>
-      <p className="text-gray-600">
+      <p className="dark:text-white text-gray-900 text-start sm:text-sm md:text-lg lg:text-lg lg:text-wrap sm:text-wrap">
         Recomendamoso SGV a qualquer empresa que busque eficiência, organização
         e crescimento sustentável em suas operações comerciais.&quot;
       </p>
-      <p className="text-gray-600">- Northon - Gerente de Vendas</p>
-      <p className="text-gray-600">- Djr Representações Comerciais</p>
-      <p className="text-gray-600">- Chapecó - SC</p>
+      <p className="dark:text-white text-gray-900">- Northon - Gerente de Vendas</p>
+      <p className="dark:text-white text-gray-900">- Djr Representações Comerciais</p>
+      <p className="dark:text-white text-gray-900">- Chapecó - SC</p>
     </>
   );
 };

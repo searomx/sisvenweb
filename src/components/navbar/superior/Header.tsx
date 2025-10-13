@@ -94,11 +94,9 @@ const Header = async () => {
               type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
             >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">View notifications</span>
-              <UserIcon aria-hidden="true" className="size-6 sm:size-3" />
+              <UserIcon aria-hidden="true" className="size-6 sm:size-3 md:size-4 lg:size-6" />
             </button>
-            <div className="flex items-center justify-end ml-2">
+            <div className="flex items-center justify-end">
               <Link href="/login">
                 <span className="text-lg sm:text-[0.7rem] font-semibold text-zinc-300">
                   Área do cliente
