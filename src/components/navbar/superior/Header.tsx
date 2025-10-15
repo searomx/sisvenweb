@@ -97,7 +97,7 @@ const Header = async () => {
               <UserIcon aria-hidden="true" className="size-6 sm:size-3 md:size-4 lg:size-6" />
             </button>
             <div className="flex items-center justify-end">
-              <Link href="/login">
+              <Link href="/users">
                 <span className="text-lg sm:text-[0.7rem] font-semibold text-zinc-300">
                   Área do cliente
                 </span>

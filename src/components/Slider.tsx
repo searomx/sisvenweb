@@ -5,6 +5,7 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const images = [
   "./images/team.png",
@@ -34,9 +35,12 @@ const Slider: React.FC = () => {
       >
         {images.map((src, index) => (
           <SwiperSlide key={index} style={{ width: "300px" }}>
-            <img
+            <Image
               src={src}
               alt={`Slide ${index + 1}`}
+              width={500}
+              height={400}
+              priority={true}
               style={{ width: "100%", borderRadius: "10px" }}
             />
           </SwiperSlide>

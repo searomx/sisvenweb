@@ -1,10 +1,17 @@
 import type { NextConfig } from "next";
+import { Autoplay } from "swiper/modules";
 const withFlowbiteReact = require("flowbite-react/plugin/nextjs");
 
 const nextConfig: NextConfig = {
   output: "standalone",
   images: {
     qualities: [25, 50, 75, 100],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',        
+      },  
+    ],
   },
   eslint: {
     ignoreDuringBuilds: true,
