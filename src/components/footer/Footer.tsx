@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 mt-10 text-white py-3 sm:px-1 sm:mt-2 px-4 shadow-2xl shadow-gray-500 fixed bottom-0 left-0 w-full">
-      <div className="max-w-7xl mx-auto flex flex-col lg:space-x-5 md:flex-row space-x-10">
-        <p className="text-sm mb-4 md:mb-0">
-          © b4tech Softwares e Serviços - 2025
+      <div className="max-w-7xl mx-auto flex lg:space-x-2 md:flex-row space-x-2 sm:flex-col sm:space-y-2 md:space-y-0 items-center justify-between">
+        <p className="text-sm md:mb-0 sm:mb-0">
+          © b4tech-2025
         </p>
         <div className="flex space-x-4 sm:text-center md:ml-auto">
           <Link

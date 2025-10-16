@@ -34,6 +34,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --link-hover: oklch(0.6962 0.1955 32.32);
+  --font-geist-sans: "Geist Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
 }
 
 @theme inline {
@@ -100,7 +103,7 @@
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(100% 0.00011 271.152 / 0.1);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.488 0.243 264.376);
@@ -121,10 +124,22 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    box-sizing: border-box;
+    @apply transition-colors;
+    @apply scroll-smooth;
+    @apply antialiased;
   }
+  }
+  Link{
+    @apply text-slate-400 hover:text-[rgb(255,99,71)];
+  }
+   a {
+    @apply text-slate-400 hover:text-[rgb(255,99,71)];
+  }
+
   body {
     @apply bg-background text-foreground;
+    @apply p-0;
+    @apply m-0;
   }
   @media (prefers-color-scheme: dark) {
     html {
@@ -134,4 +149,3 @@
   html {
     color-scheme: light dark;
   }
-}

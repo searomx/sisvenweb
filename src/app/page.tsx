@@ -21,6 +21,7 @@ import imgSalesMan from "../../public/images/sales-man.png";
 import VideoCarousel from "@/components/VideoCarousel";
 import { TextoDejalmas } from "@/components/textos/TextoDejalmas";
 import { TextoNorthon } from "@/components/textos/TextoNorthon";
+import { TbTargetArrow } from "react-icons/tb";
 
 export default function Home() {
   const fonteTexto =
@@ -40,15 +41,16 @@ export default function Home() {
 
       <div className="flex w-full flex-wrap items-center justify-center mt-10 m-auto lg:max-w-screen-xl">
         <div className="flex flex-col w-full items-center mb-3 text-start">
-          <span className="max-[600px]:text-2xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
-            O Que é o Sistema de Gerenciamento de Vendas - SGV.
-          </span>
-          <span className="text-zinc-300 max-[600px]:text-2xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium text-wrap lg:text-wrap text-center">
-            Administração de vendas de maneira eficaz.
-          </span>
-          <span className="text-amber-500 text-shadow-lg/30 text-3xl lg:text-1xl md:text-md font-medium flex text-wrap lg:text-wrap text-center">
-            Tudo na palma da sua mão.
-          </span>
+          <blockquote className="text-center text-2xl font-semibold text-gray-900 italic dark:text-white">
+            O Que é o Sistema de Gestão de Vendas - SGV
+            <p>Administração de vendas de maneira eficaz.</p>
+            <span>Tudo na palma da sua</span>
+            <span className="relative ml-4 inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-orange-600">
+              <span className="relative text-white dark:text-gray-950">
+                mão
+              </span>
+            </span>
+          </blockquote>
         </div>
         <div className="flex flex-col pb-5 gap-y-2 max-w-screen-xl justify-center mt-1 lg:flex-row lg:flex-wrap lg:gap-x-2">
           <div className="w-full sm:max-w-sm lg:w-full md:w-full h-auto m-auto shadow-2xl shadow-cyan-300 bg-background">
@@ -126,15 +128,19 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4">
           <div className="flex flex-col pb-5 gap-y-2 max-w-screen-xl justify-center mt-1 lg:gap-x-2">
-            <span className="flex text-amber-400 justify-center bg-gray-950 max-[600px]:text-3xl text-4xl lg:text-2xl md:text-md sm:text-[0] font-medium text-wrap lg:text-wrap text-center">
-              O que nós podemos fazer por VOCÊ hoje?
-            </span>
-            <span
-              className={`${fonteTexto} max-[600px]:text-2xl text-4xl lg:text-2xl md:text-sm sm:text-[0.7rem] font-medium text-wrap lg:text-wrap text-center`}
-            >
+            <blockquote className="text-center text-2xl font-semibold text-gray-900 italic dark:text-white">
+              O que nós podemos fazer por
+              <span className="relative ml-3 mr-3 inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-pink-500">
+                <span className="relative text-white dark:text-gray-950">
+                  VOCÊ
+                </span>
+              </span>
+              hoje?
+            </blockquote>
+            <blockquote className="text-center text-2xl font-semibold text-gray-900 italic dark:text-white">
               Juntos, vamos conectar os seus clientes com as suas representadas,
               garantindo MAIS AGILIDADE NA CONVERSÃO DE NEGÓCIOS.
-            </span>
+            </blockquote>
 
             <div className="flex flex-col justify-between bg-gray-950 p-2">
               <span
@@ -144,10 +150,11 @@ export default function Home() {
                 realmente importa:
               </span>
               <span className="font-sans italic text-amber-500 text-center text-2xl lg:text-lg md:text-md sm:text-[0.7rem] font-medium text-wrap lg:text-wrap">
-              &quot;Atender o máximo de clientes possível, DIRETO AO PONTO!&quot;
+                &quot;Atender o máximo de clientes possível, DIRETO AO
+                PONTO!&quot;<TbTargetArrow className="inline-block ml-2 text-red-600 w-16 h-16" />
               </span>
 
-              <span className="font-sans italic text-xl text-amber-400 text-center">
+              <span className="font-sans m-auto italic text-xl p-2 bg-[rgb(249,56,34)] text-white text-center">
                 e nós fazemos o resto.
               </span>
             </div>
@@ -160,9 +167,9 @@ export default function Home() {
             id="comofunc"
             className="space-y-2 max-w-screen justify-center mt-1 lg:flex-wrap lg:space-x-2 lg:m-auto"
           >
-            <div className="flex flex-col items-center mb-3 p-2 shadow-2xl shadow-cyan-300">
+            <div className="flex flex-col items-center mb-3 p-2 shadow-2xl shadow-cyan-300 bg-gray-950">
               <div className="flex p-1 bg-slate-50 w-full justify-center items-center">
-                <span className="text-zinc-600 max-[600px]:text-xl text-5xl lg:text-2xl md:text-md sm:text-sm font-medium flex text-wrap lg:text-wrap text-center">
+                <span className="text-gray-950 font-semibold max-[600px]:text-xl text-5xl lg:text-2xl md:text-md sm:text-sm flex text-wrap lg:text-wrap text-center">
                   Como funciona o SGV
                 </span>
               </div>
@@ -460,44 +467,249 @@ export default function Home() {
           objectFit="cover"
         />
         <div className="block absolute inset-0 bg-[rgba(0,0,0,0.5)] items-center justify-center">
-          <div className="text-white text-center px-4 md:px-4 lg:px-4">
-            <h2 className="text-xl md:text-2xl font-semibold mb-4">
-              Setores Atendidos
-            </h2>
-            <ul className="space-y-2 text-sm md:text-base">
-              <li>Indústrias de Auto Peças</li>
-              <li>Indústrias de Alimentos e Bebidas</li>
-              <li>Indústrias de Sapatos</li>
-              <li>Indústrias de Materiais Elétricos</li>
-              <li>Indústrias de Materiais de Construção</li>
-              <li>Indústrias Farmacêuticas</li>
-              <li>Distribuidoras em Geral</li>
-              <li>Comércio Atacadista</li>
-            </ul>
+          <div className="flex flex-col items-center justify-center h-full">
+            <div className="text-white text-start px-4 md:px-4 lg:px-4">
+              <h2 className="text-xl md:text-2xl font-semibold mb-4">
+                Setores Atendidos
+              </h2>
+              <ul
+                role="list"
+                className="space-y-2 justify-center items-center text-sm md:text-base list-disc marker:text-sky-400"
+              >
+                <li className="flex">
+                  <svg
+                    className="h-[1lh] w-5.5 shrink-0"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    strokeLinecap="square"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="11"
+                      className="fill-sky-400/25"
+                    />
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="10.5"
+                      className="stroke-sky-400/25"
+                    />
+                    <path
+                      d="M8 11.5L10.5 14L14 8"
+                      className="stroke-sky-900 dark:stroke-sky-300"
+                    />
+                  </svg>
+                  <p className="ml-3">Auto Peças</p>
+                </li>
+                <li className="flex">
+                  <svg
+                    className="h-[1lh] w-5.5 shrink-0"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    strokeLinecap="square"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="11"
+                      className="fill-sky-400/25"
+                    />
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="10.5"
+                      className="stroke-sky-400/25"
+                    />
+                    <path
+                      d="M8 11.5L10.5 14L14 8"
+                      className="stroke-sky-900 dark:stroke-sky-300"
+                    />
+                  </svg>
+                  <p className="ml-3">Alimentos e Bebidas</p>
+                </li>
+                <li className="flex">
+                  <svg
+                    className="h-[1lh] w-5.5 shrink-0"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    strokeLinecap="square"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="11"
+                      className="fill-sky-400/25"
+                    />
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="10.5"
+                      className="stroke-sky-400/25"
+                    />
+                    <path
+                      d="M8 11.5L10.5 14L14 8"
+                      className="stroke-sky-900 dark:stroke-sky-300"
+                    />
+                  </svg>
+                  <p className="ml-3">Calçados e Acessórios</p>
+                </li>
+                <li className="flex">
+                  <svg
+                    className="h-[1lh] w-5.5 shrink-0"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    strokeLinecap="square"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="11"
+                      className="fill-sky-400/25"
+                    />
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="10.5"
+                      className="stroke-sky-400/25"
+                    />
+                    <path
+                      d="M8 11.5L10.5 14L14 8"
+                      className="stroke-sky-900 dark:stroke-sky-300"
+                    />
+                  </svg>
+                  <p className="ml-3">Eletrodomésticos</p>
+                </li>
+                <li className="flex">
+                  <svg
+                    className="h-[1lh] w-5.5 shrink-0"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    strokeLinecap="square"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="11"
+                      className="fill-sky-400/25"
+                    />
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="10.5"
+                      className="stroke-sky-400/25"
+                    />
+                    <path
+                      d="M8 11.5L10.5 14L14 8"
+                      className="stroke-sky-900 dark:stroke-sky-300"
+                    />
+                  </svg>
+                  <p className="ml-3">Ferramentas</p>
+                </li>
+                <li className="flex">
+                  <svg
+                    className="h-[1lh] w-5.5 shrink-0"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    strokeLinecap="square"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="11"
+                      className="fill-sky-400/25"
+                    />
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="10.5"
+                      className="stroke-sky-400/25"
+                    />
+                    <path
+                      d="M8 11.5L10.5 14L14 8"
+                      className="stroke-sky-900 dark:stroke-sky-300"
+                    />
+                  </svg>
+                  <p className="ml-3">Máquinas e Equipamentos</p>
+                </li>
+                <li className="flex">
+                  <svg
+                    className="h-[1lh] w-5.5 shrink-0"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    strokeLinecap="square"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="11"
+                      className="fill-sky-400/25"
+                    />
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="10.5"
+                      className="stroke-sky-400/25"
+                    />
+                    <path
+                      d="M8 11.5L10.5 14L14 8"
+                      className="stroke-sky-900 dark:stroke-sky-300"
+                    />
+                  </svg>
+                  <p className="ml-3">Materiais Hidráulicos</p>
+                </li>
+                <li className="flex">
+                  <svg
+                    className="h-[1lh] w-5.5 shrink-0"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    strokeLinecap="square"
+                  >
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="11"
+                      className="fill-sky-400/25"
+                    />
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="10.5"
+                      className="stroke-sky-400/25"
+                    />
+                    <path
+                      d="M8 11.5L10.5 14L14 8"
+                      className="stroke-sky-900 dark:stroke-sky-300"
+                    />
+                  </svg>
+                  <p className="ml-3">Materiais Elétricos</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-<div className="mb-20 p-1 h-auto w-full bg-background shadow-2xl shadow-cyan-300 flex justify-center">
-      <Link
-        to="topo"
-        smooth={true}
-        duration={500}
-        className="cursor-pointer text-slate-300 dark:text-white hover:text-tomato items-center"
-      >
-        Retornar ao topo
-        <svg
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          className="w-4 h-4 ml-2"
-          viewBox="0 0 24 24"
+      <div className="flex mb-20 p-1">
+        <Link
+          to="topo"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer text-slate-300 dark:text-white hover:text-[] inline-flex items-center"
         >
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </Link>
-</div>
+          Retornar ao topo
+          <svg
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            className="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </Link>
+      </div>
       {/* Fim da Quarta pagina*/}
     </div>
   );
