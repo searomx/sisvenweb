@@ -452,7 +452,7 @@ export default function Home() {
       ></div>
       <div className="relative w-full h-[300px] bg-center p-4 bg-amber-400">
         <Image
-          src="/images/sales-man.png"
+          src={imgSalesMan}
           alt="Sales Man"
           sizes="100vw"
           priority={true}

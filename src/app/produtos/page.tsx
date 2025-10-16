@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import imgMicroservicos from "../../../public/images/microservicos.png";
-import imgAuditoria from "../../../public/images/auditoria.png";
-import imgErp from "../../../public/images/erp.png";
 import imgIa from "../../../public/images/ia.png";
 import imgSGV from "../../../public/images/logo-sgv.png";
 
@@ -240,5 +238,6 @@ export default function Produtos() {
       <div className="relative max-w-screen-xl w-full justify-center items-center h-16 mx-auto lg:py-0 sm:p-10 md:p-16">
       </div>
     </div>
+    
   );
 }
