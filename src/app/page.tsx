@@ -144,7 +144,7 @@ export default function Home() {
                 realmente importa:
               </span>
               <span className="font-sans italic text-amber-500 text-center text-2xl lg:text-lg md:text-md sm:text-[0.7rem] font-medium text-wrap lg:text-wrap">
-                "Atender o máximo de clientes possível, DIRETO AO PONTO!&quot;
+              &quot;Atender o máximo de clientes possível, DIRETO AO PONTO!&quot;
               </span>
 
               <span className="font-sans italic text-xl text-amber-400 text-center">
